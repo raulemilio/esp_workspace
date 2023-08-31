@@ -1,0 +1,1 @@
+warning: the value 'y' is invalid for SOC_I2S_NUM (defined at /home/rome/esp/esp-idf/./components/soc/esp32c3/include/soc/Kconfig.soc_caps.in:386), which has type int -- assignment ignored
