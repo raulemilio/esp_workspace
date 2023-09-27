@@ -1,4 +1,4 @@
-# Install script for directory: /home/rome/esp/ESP32_workspace/tcp/main
+# Install script for directory: /home/rome/esp/esp_workspace/tcp/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-/* * Data converted from /home/rome/esp/ESP32_workspace/tcp/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/rome/esp/esp_workspace/tcp/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

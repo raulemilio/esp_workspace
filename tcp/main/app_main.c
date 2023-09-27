@@ -495,9 +495,9 @@ static void servo_ind_sensor_task(void)
 				for(int32_t i=0;i<pasos_motor;i++){
 					// patas 4 y 5 usadas para finales de carrera
 					if(gpio_get_level(4)==1){
-					printf("cnt: %ld\n", pasos_motor);
-					printf("cnt: %d\n", cnt++);
-					gpio_set_level(GPIO_OUTPUT_IO_0, cnt % 2);
+						printf("cnt: %ld\n", pasos_motor);
+						printf("cnt: %d\n", cnt++);
+						gpio_set_level(GPIO_OUTPUT_IO_0, cnt % 2);
 					}
 					vTaskDelay(1/portTICK_PERIOD_MS);
 				}
@@ -624,9 +624,10 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
     ESP_ERROR_CHECK(example_connect());
-
+//
     mqtt_app_start();
     read_adc_task(); // sensor inductivo device 1
 //    servo_ind_sensor_task(); // servo sensor inductivo device 3
 //    servo_wheel_task(); // servo ruedas device 2
+//  status_device();
 }

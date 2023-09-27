@@ -1,4 +1,4 @@
-# Install script for directory: /home/rome/esp/esp-idf/components/esp_eth
+# Install script for directory: /home/rome/eclipse/cpp-2023-06/esp-idf-v_5-1-1/esp-idf-v5.1.1/components/esp_eth
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

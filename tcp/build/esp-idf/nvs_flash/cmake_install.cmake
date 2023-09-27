@@ -1,4 +1,4 @@
-# Install script for directory: /home/rome/esp/esp-idf/components/nvs_flash
+# Install script for directory: /home/rome/eclipse/cpp-2023-06/esp-idf-v_5-1-1/esp-idf-v5.1.1/components/nvs_flash
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

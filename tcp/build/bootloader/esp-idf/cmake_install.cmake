@@ -1,4 +1,4 @@
-# Install script for directory: /home/rome/esp/esp-idf
+# Install script for directory: /home/rome/eclipse/cpp-2023-06/esp-idf-v_5-1-1/esp-idf-v5.1.1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,96 +39,96 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/riscv/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/riscv/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/newlib/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/newlib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/soc/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/soc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/hal/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/hal/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/spi_flash/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/spi_flash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/esp_app_format/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/esp_app_format/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/efuse/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/efuse/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/esp_system/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/esp_system/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/esp_common/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/esp_common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/esp_rom/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/esp_rom/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/log/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/log/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/esptool_py/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/esptool_py/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/partition_table/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/partition_table/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/bootloader/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/bootloader/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/freertos/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/freertos/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/bootloader/esp-idf/main/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/bootloader/esp-idf/main/cmake_install.cmake")
 endif()
 

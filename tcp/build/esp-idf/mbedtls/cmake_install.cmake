@@ -1,4 +1,4 @@
-# Install script for directory: /home/rome/esp/esp-idf/components/mbedtls
+# Install script for directory: /home/rome/eclipse/cpp-2023-06/esp-idf-v_5-1-1/esp-idf-v5.1.1/components/mbedtls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/rome/esp/ESP32_workspace/tcp/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("/home/rome/esp/esp_workspace/tcp/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 endif()
 
