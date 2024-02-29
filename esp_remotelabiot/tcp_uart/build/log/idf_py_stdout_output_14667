@@ -1,0 +1,135 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/bootloader/esp-idf/esptool_py && /home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/rome/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/bootloader/bootloader.bin
+Bootloader binary size 0x5030 bytes. 0x2fd0 bytes (37%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c: In function 'read_adc_task':
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:392:14: warning: unused variable 'unit' [-Wunused-variable]
+  392 |         char unit[] = EXAMPLE_ADC_UNIT_STR(EXAMPLE_ADC_UNIT);
+      |              ^~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:375:19: warning: unused variable 'ret' [-Wunused-variable]
+  375 |         esp_err_t ret;
+      |                   ^~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c: In function 'tx_task':
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:646:13: warning: unused variable 'flag_run' [-Wunused-variable]
+  646 |         int flag_run = 0; // 0 experimento sin iniciar | habilitado para solicitar datos
+      |             ^~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:645:13: warning: unused variable 'flag_state' [-Wunused-variable]
+  645 |         int flag_state = 0; // 0 inicialización | 1 habilitado para empezar
+      |             ^~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:644:13: warning: unused variable 'cantidadDatos' [-Wunused-variable]
+  644 |         int cantidadDatos=10;
+      |             ^~~~~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:640:14: warning: unused variable 'commDataReq_uart_tx' [-Wunused-variable]
+  640 |         char commDataReq_uart_tx[]="P,O,0,0,$";
+      |              ^~~~~~~~~~~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:638:14: warning: unused variable 'commRunExpB_uart_tx' [-Wunused-variable]
+  638 |         char commRunExpB_uart_tx[]="P,R,1,0,$";
+      |              ^~~~~~~~~~~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:637:14: warning: unused variable 'commRunExpA_uart_tx' [-Wunused-variable]
+  637 |         char commRunExpA_uart_tx[]="P,R,0,0,$";
+      |              ^~~~~~~~~~~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:635:14: warning: unused variable 'commInit_uart_tx' [-Wunused-variable]
+  635 |         char commInit_uart_tx[]="P,A,0,0,$";
+      |              ^~~~~~~~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:616:14: warning: unused variable 'data_rx' [-Wunused-variable]
+  616 |     uint8_t *data_rx = (uint8_t *) malloc(BUF_SIZE);
+      |              ^~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:615:14: warning: unused variable 'data' [-Wunused-variable]
+  615 |     uint8_t* data = (uint8_t*) malloc(RX_BUF_SIZE+1);
+      |              ^~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c: In function 'rx_task':
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:869:13: warning: unused variable 'cantidadDatos' [-Wunused-variable]
+  869 |         int cantidadDatos=10;
+      |             ^~~~~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c: At top level:
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:734:13: warning: 'servo_wheel_task' defined but not used [-Wunused-function]
+  734 | static void servo_wheel_task(void)
+      |             ^~~~~~~~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:593:13: warning: 'tx_task' defined but not used [-Wunused-function]
+  593 | static void tx_task(void *arg)
+      |             ^~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:473:13: warning: 'servo_ind_sensor_task' defined but not used [-Wunused-function]
+  473 | static void servo_ind_sensor_task(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:361:13: warning: 'read_adc_task' defined but not used [-Wunused-function]
+  361 | static void read_adc_task(void)
+      |             ^~~~~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:97:13: warning: 'gpio_task_example' defined but not used [-Wunused-function]
+   97 | static void gpio_task_example(void* arg)
+      |             ^~~~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable mqtt_tcp.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/mqtt_tcp.bin
+[7/8] cd /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/esp-idf/esptool_py && /home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/rome/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/partition_table/partition-table.bin /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/mqtt_tcp.bin
+mqtt_tcp.bin binary size 0xe4830 bytes. Smallest app partition is 0x100000 bytes. 0x1b7d0 bytes (11%) free.
+[7/8] cd /home/rome/esp/esp-idf/components/esptool_py && /home/rome/.espressif/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/home/rome/esp/esp-idf -D "SERIAL_TOOL=/home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/rome/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build -P /home/rome/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 mqtt_tcp.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev1
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-C3 (QFN32) (revision v0.3)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 58:cf:79:07:53:84
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f4fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20528 bytes to 12602...
+Writing at 0x00000000... (100 %)
+Wrote 20528 bytes (12602 compressed) at 0x00000000 in 0.8 seconds (effective 206.9 kbit/s)...
+Hash of data verified.
+Compressed 935984 bytes to 537465...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c842... (6 %)
+Writing at 0x00023a0a... (9 %)
+Writing at 0x0002959e... (12 %)
+Writing at 0x00034fae... (15 %)
+Writing at 0x0003cdc3... (18 %)
+Writing at 0x00043123... (21 %)
+Writing at 0x0004a4ba... (24 %)
+Writing at 0x00052489... (27 %)
+Writing at 0x000593ee... (30 %)
+Writing at 0x000607a8... (33 %)
+Writing at 0x00066e4d... (36 %)
+Writing at 0x0006d410... (39 %)
+Writing at 0x00073ee4... (42 %)
+Writing at 0x0007a3c3... (45 %)
+Writing at 0x000809c6... (48 %)
+Writing at 0x000869b6... (51 %)
+Writing at 0x0008cb41... (54 %)
+Writing at 0x000928bf... (57 %)
+Writing at 0x00098d08... (60 %)
+Writing at 0x0009f334... (63 %)
+Writing at 0x000a5208... (66 %)
+Writing at 0x000ac002... (69 %)
+Writing at 0x000b2eab... (72 %)
+Writing at 0x000b9d14... (75 %)
+Writing at 0x000c0f66... (78 %)
+Writing at 0x000c754a... (81 %)
+Writing at 0x000cd514... (84 %)
+Writing at 0x000d3b2f... (87 %)
+Writing at 0x000d9d9f... (90 %)
+Writing at 0x000e0b5b... (93 %)
+Writing at 0x000e8272... (96 %)
+Writing at 0x000ef418... (100 %)
+Wrote 935984 bytes (537465 compressed) at 0x00010000 in 15.2 seconds (effective 494.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 280.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

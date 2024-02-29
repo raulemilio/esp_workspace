@@ -1,0 +1,10 @@
+[0/1] cd /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build && /home/rome/.espressif/tools/cmake/3.24.0/bin/cmake -D "IDF_SIZE_TOOL=/home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python;-m;esp_idf_size" -D MAP_FILE=/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/mqtt_tcp.map -D OUTPUT_JSON= -P /home/rome/esp/esp-idf/tools/cmake/run_size_tool.cmake
+Total sizes:
+Used stat D/IRAM:   99580 bytes ( 221716 remain, 31.0% used)
+      .data size:   10468 bytes
+      .bss  size:   18080 bytes
+      .text size:   71032 bytes
+Used Flash size :  854030 bytes
+           .text:  696062 bytes
+         .rodata:  155696 bytes
+Total image size:  935530 bytes (.bin may be padded larger)

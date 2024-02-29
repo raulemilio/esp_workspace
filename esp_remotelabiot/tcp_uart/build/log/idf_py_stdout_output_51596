@@ -1,0 +1,408 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Feb  9 2024 11:34:49[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (33) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (90) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=26ac0h (158400) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=00036ae8 vaddr=3fc91600 size=028ech ( 10476) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=000393dc vaddr=40380000 size=06c3ch ( 27708) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=aa7c0h (698304) map[0m
+[0;32mI (249) esp_image: segment 4: paddr=000ea7e8 vaddr=40386c3c size=0a93ch ( 43324) load[0m
+[0;32mI (263) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (263) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) cpu_start: Unicore app[0m
+[0;32mI (275) cpu_start: Pro cpu up.[0m
+[0;32mI (284) cpu_start: Pro cpu start user code[0m
+[0;32mI (284) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (284) cpu_start: Application information:[0m
+[0;32mI (287) cpu_start: Project name:     mqtt_tcp[0m
+[0;32mI (292) cpu_start: App version:      d2fb13c-dirty[0m
+[0;32mI (297) cpu_start: Compile time:     Feb 19 2024 10:48:46[0m
+[0;32mI (304) cpu_start: ELF file SHA256:  cd3c1b1a2cd46ddc...[0m
+[0;32mI (310) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (314) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (319) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (324) cpu_start: Chip rev:         v0.3[0m
+[0;32mI (329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (336) heap_init: At 3FC98590 len 00044180 (272 KiB): DRAM[0m
+[0;32mI (342) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (349) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (356) spi_flash: detected chip: generic[0m
+[0;32mI (360) spi_flash: flash io: dio[0m
+[0;33mW (364) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (377) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (384) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (391) app_start: Starting scheduler on CPU0[0m
+[0;32mI (396) main_task: Started on CPU0[0m
+[0;32mI (396) main_task: Calling app_main()[0m
+[0;32mI (396) MQTT_EXAMPLE: [APP] Startup..[0m
+[0;32mI (406) MQTT_EXAMPLE: [APP] Free memory: 281576 bytes[0m
+[0;32mI (406) MQTT_EXAMPLE: [APP] IDF version: v5.1.1[0m
+[0;32mI (416) example_connect: Start example_connect.[0m
+[0;32mI (426) pp: pp rom version: 9387209[0m
+[0;32mI (426) net80211: net80211 rom version: 9387209[0m
+I (436) wifi:wifi driver task: 3fca1078, prio:23, stack:6656, core=0
+I (436) wifi:wifi firmware version: ce9244d
+I (436) wifi:wifi certification version: v7.0
+I (446) wifi:config NVS flash: enabled
+I (446) wifi:config nano formating: disabled
+I (446) wifi:Init data frame dynamic rx buffer num: 32
+I (456) wifi:Init management frame dynamic rx buffer num: 32
+I (466) wifi:Init management short buffer num: 32
+I (466) wifi:Init dynamic tx buffer num: 32
+I (466) wifi:Init static tx FG buffer num: 2
+I (476) wifi:Init static rx buffer size: 1600
+I (476) wifi:Init static rx buffer num: 10
+I (486) wifi:Init dynamic rx buffer num: 32
+[0;32mI (486) wifi_init: rx ba win: 6[0m
+[0;32mI (486) wifi_init: tcpip mbox: 32[0m
+[0;32mI (496) wifi_init: udp mbox: 6[0m
+[0;32mI (496) wifi_init: tcp mbox: 6[0m
+[0;32mI (496) wifi_init: tcp tx win: 5744[0m
+[0;32mI (506) wifi_init: tcp rx win: 5744[0m
+[0;32mI (506) wifi_init: tcp mss: 1440[0m
+[0;32mI (516) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (516) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (526) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12[0m
+I (566) wifi:mode : sta (58:cf:79:07:53:84)
+I (566) wifi:enable tsf
+[0;32mI (566) example_connect: Connecting to CUOPrivada...[0m
+[0;32mI (566) example_connect: Waiting for IP(s)[0m
+I (2976) wifi:new:<5,1>, old:<1,0>, ap:<255,255>, sta:<5,1>, prof:1
+I (3656) wifi:state: init -> auth (b0)
+I (3656) wifi:state: auth -> assoc (0)
+I (3666) wifi:state: assoc -> run (10)
+I (3676) wifi:connected with CUOPrivada, aid = 4, channel 5, 40U, bssid = 64:70:02:74:1d:ba
+I (3676) wifi:security: WPA2-PSK, phy: bgn, rssi: -57
+I (3676) wifi:pm start, type: 1
+
+I (3676) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (3736) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4686) esp_netif_handlers: example_netif_sta ip: 192.168.103.241, mask: 255.255.255.0, gw: 192.168.103.254[0m
+[0;32mI (4686) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.103.241[0m
+[0;32mI (5416) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:5acf:79ff:fe07:5384, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5416) example_common: Connected to example_netif_sta[0m
+[0;32mI (5426) example_common: - IPv4 address: 192.168.103.241,[0m
+[0;32mI (5426) example_common: - IPv6 address: fe80:0000:0000:0000:5acf:79ff:fe07:5384, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5436) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (5446) main_task: Returned from app_main()[0m
+I (5446) wifi:<ba-add>idx:0 (ifx:0, 64:70:02:74:1d:ba), tid:0, ssn:0, winSize:64
+[0;32mI (5486) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5486) MQTT_EXAMPLE: sent subscribe successful, msg_id=7863[0m
+[0;32mI (5486) MQTT_EXAMPLE: sent subscribe successful, msg_id=54267[0m
+[0;32mI (5496) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=7863[0m
+[0;32mI (5496) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=54267[0m
+ comm_uart_tx init: P;A;0;0;$
+[0;32mI (14256) RX_TASK: Read 11 bytes: 'P;A;0;0;$
+'[0m
+[0;32mI (14256) MQTT_EXAMPLE: sent log publish successful, msg_id=51679[0m
+ comm_uart_tx init: P;R;0;0;$
+[0;32mI (23566) RX_TASK: Read 11 bytes: 'P;R;0;0;$
+'[0m
+ comm_Data_uart_tx: P;O;1;0;$
+[0;32mI (23566) MQTT_EXAMPLE: sent log publish successful, msg_id=2662[0m
+[0;32mI (25586) RX_TASK: Read 91 bytes: 'P;D;0;[101,101,102,101,102,101,102,102,103,102,102,102,102,103,102,101,101,102,102,101];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [101,101,102,101,102,101,102,102,103,102,102,102,102,103,102,101,101,102,102,101] } 
+[0;32mI (25596) MQTT_EXAMPLE: sent data publish successful, msg_id=57182[0m
+[0;32mI (25606) MQTT_EXAMPLE: sent log publish successful, msg_id=24784[0m
+[0;32mI (27626) RX_TASK: Read 91 bytes: 'P;D;0;[102,102,103,102,102,101,102,101,101,101,100,101,100,100,100,100,100,100,100,100];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [102,102,103,102,102,101,102,101,101,101,100,101,100,100,100,100,100,100,100,100] } 
+[0;32mI (27636) MQTT_EXAMPLE: sent data publish successful, msg_id=49933[0m
+[0;32mI (27646) MQTT_EXAMPLE: sent log publish successful, msg_id=15801[0m
+[0;32mI (29666) RX_TASK: Read 90 bytes: 'P;D;0;[101,100,100,100,99,100,100,101,100,100,100,100,101,101,101,100,101,102,102,103];$
+'[0m
+tamaño datos completos a enviar 107
+mqtt data: { "dev_id": 4, "IntLum": [101,100,100,100,99,100,100,101,100,100,100,100,101,101,101,100,101,102,102,103] } 
+[0;32mI (29676) MQTT_EXAMPLE: sent data publish successful, msg_id=53642[0m
+[0;32mI (29686) MQTT_EXAMPLE: sent log publish successful, msg_id=17850[0m
+[0;32mI (31706) RX_TASK: Read 91 bytes: 'P;D;0;[101,101,101,102,101,102,102,102,102,102,102,103,102,102,102,101,102,102,101,101];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [101,101,101,102,101,102,102,102,102,102,102,103,102,102,102,101,102,102,101,101] } 
+[0;32mI (31716) MQTT_EXAMPLE: sent data publish successful, msg_id=41563[0m
+[0;32mI (31726) MQTT_EXAMPLE: sent log publish successful, msg_id=13288[0m
+[0;32mI (33746) RX_TASK: Read 91 bytes: 'P;D;0;[102,102,103,102,102,102,102,101,101,101,101,102,100,101,100,101,101,101,100,100];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [102,102,103,102,102,102,102,101,101,101,101,102,100,101,100,101,101,101,100,100] } 
+[0;32mI (33756) MQTT_EXAMPLE: sent data publish successful, msg_id=42971[0m
+[0;32mI (33766) MQTT_EXAMPLE: sent log publish successful, msg_id=60149[0m
+[0;32mI (35786) RX_TASK: Read 91 bytes: 'P;D;0;[102,101,101,101,101,101,101,100,100,100,100,100,100,100,100,101,101,101,101,101];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [102,101,101,101,101,101,101,100,100,100,100,100,100,100,100,101,101,101,101,101] } 
+[0;32mI (35796) MQTT_EXAMPLE: sent data publish successful, msg_id=29358[0m
+[0;32mI (35806) MQTT_EXAMPLE: sent log publish successful, msg_id=56121[0m
+[0;32mI (37826) RX_TASK: Read 90 bytes: 'P;D;0;[100,100,99,100,100,101,101,100,101,101,100,101,102,101,102,102,102,102,102,102];$
+'[0m
+tamaño datos completos a enviar 107
+mqtt data: { "dev_id": 4, "IntLum": [100,100,99,100,100,101,101,100,101,101,100,101,102,101,102,102,102,102,102,102] } 
+[0;32mI (37836) MQTT_EXAMPLE: sent data publish successful, msg_id=11792[0m
+[0;32mI (37846) MQTT_EXAMPLE: sent log publish successful, msg_id=46430[0m
+[0;32mI (39866) RX_TASK: Read 90 bytes: 'P;D;0;[102,101,102,102,101,101,102,102,101,102,102,101,102,101,100,101,101,100,99,100];$
+'[0m
+tamaño datos completos a enviar 107
+mqtt data: { "dev_id": 4, "IntLum": [102,101,102,102,101,101,102,102,101,102,102,101,102,101,100,101,101,100,99,100] } 
+[0;32mI (39876) MQTT_EXAMPLE: sent data publish successful, msg_id=20333[0m
+[0;32mI (39886) MQTT_EXAMPLE: sent log publish successful, msg_id=13232[0m
+[0;32mI (41906) RX_TASK: Read 87 bytes: 'P;D;0;[102,102,102,101,101,101,100,101,101,100,99,100,100,99,100,100,99,100,100,99];$
+'[0m
+tamaño datos completos a enviar 104
+mqtt data: { "dev_id": 4, "IntLum": [102,102,102,101,101,101,100,101,101,100,99,100,100,99,100,100,99,100,100,99] } 
+[0;32mI (41916) MQTT_EXAMPLE: sent data publish successful, msg_id=64995[0m
+[0;32mI (41926) MQTT_EXAMPLE: sent log publish successful, msg_id=2008[0m
+[0;32mI (43946) RX_TASK: Read 84 bytes: 'P;D;0;[101,101,100,100,100,100,99,99,100,100,99,99,100,99,99,99,100,100,100,100];$
+'[0m
+tamaño datos completos a enviar 101
+mqtt data: { "dev_id": 4, "IntLum": [101,101,100,100,100,100,99,99,100,100,99,99,100,99,99,99,100,100,100,100] } 
+[0;32mI (43956) MQTT_EXAMPLE: sent data publish successful, msg_id=58769[0m
+[0;32mI (43966) MQTT_EXAMPLE: sent log publish successful, msg_id=24904[0m
+[0;32mI (45986) RX_TASK: Read 83 bytes: 'P;D;0;[100,100,100,99,100,99,99,98,100,99,99,100,99,99,100,100,100,101,100,100];$
+'[0m
+tamaño datos completos a enviar 100
+mqtt data: { "dev_id": 4, "IntLum": [100,100,100,99,100,99,99,98,100,99,99,100,99,99,100,100,100,101,100,100] } 
+[0;32mI (45996) MQTT_EXAMPLE: sent data publish successful, msg_id=65504[0m
+[0;32mI (46006) MQTT_EXAMPLE: sent log publish successful, msg_id=48858[0m
+[0;32mI (48026) RX_TASK: Read 81 bytes: 'P;D;0;[99,99,99,100,99,99,98,99,100,99,99,100,100,99,100,100,100,101,100,100];$
+'[0m
+tamaño datos completos a enviar 98
+mqtt data: { "dev_id": 4, "IntLum": [99,99,99,100,99,99,98,99,100,99,99,100,100,99,100,100,100,101,100,100] } 
+[0;32mI (48036) MQTT_EXAMPLE: sent data publish successful, msg_id=23987[0m
+[0;32mI (48046) MQTT_EXAMPLE: sent log publish successful, msg_id=23379[0m
+[0;32mI (50066) RX_TASK: Read 90 bytes: 'P;D;0;[99,100,100,100,100,100,100,100,101,100,101,101,101,100,101,100,100,100,101,100];$
+'[0m
+tamaño datos completos a enviar 107
+mqtt data: { "dev_id": 4, "IntLum": [99,100,100,100,100,100,100,100,101,100,101,101,101,100,101,100,100,100,101,100] } 
+[0;32mI (50076) MQTT_EXAMPLE: sent data publish successful, msg_id=43084[0m
+[0;32mI (50086) MQTT_EXAMPLE: sent log publish successful, msg_id=41929[0m
+[0;32mI (52106) RX_TASK: Read 78 bytes: 'P;D;0;[101,100,101,100,100,100,99,100,99,99,99,99,99,99,99,99,98,98,98,99];$
+'[0m
+tamaño datos completos a enviar 95
+mqtt data: { "dev_id": 4, "IntLum": [101,100,101,100,100,100,99,100,99,99,99,99,99,99,99,99,98,98,98,99] } 
+[0;32mI (52116) MQTT_EXAMPLE: sent data publish successful, msg_id=42476[0m
+[0;32mI (52126) MQTT_EXAMPLE: sent log publish successful, msg_id=8543[0m
+[0;32mI (54146) RX_TASK: Read 81 bytes: 'P;D;0;[100,99,100,100,100,100,100,100,99,100,100,99,100,99,99,99,99,98,99,99];$
+'[0m
+tamaño datos completos a enviar 98
+mqtt data: { "dev_id": 4, "IntLum": [100,99,100,100,100,100,100,100,99,100,100,99,100,99,99,99,99,98,99,99] } 
+[0;32mI (54156) MQTT_EXAMPLE: sent data publish successful, msg_id=6307[0m
+[0;32mI (54166) MQTT_EXAMPLE: sent log publish successful, msg_id=31989[0m
+[0;32mI (56186) RX_TASK: Read 77 bytes: 'P;D;0;[99,99,99,99,101,99,99,100,99,99,99,99,99,99,99,99,100,100,100,100];$
+'[0m
+tamaño datos completos a enviar 94
+mqtt data: { "dev_id": 4, "IntLum": [99,99,99,99,101,99,99,100,99,99,99,99,99,99,99,99,100,100,100,100] } 
+[0;32mI (56196) MQTT_EXAMPLE: sent data publish successful, msg_id=45240[0m
+[0;32mI (56206) MQTT_EXAMPLE: sent log publish successful, msg_id=6090[0m
+[0;32mI (58226) RX_TASK: Read 87 bytes: 'P;D;0;[99,98,100,99,100,99,100,100,100,100,100,101,101,102,101,101,102,102,102,101];$
+'[0m
+tamaño datos completos a enviar 104
+mqtt data: { "dev_id": 4, "IntLum": [99,98,100,99,100,99,100,100,100,100,100,101,101,102,101,101,102,102,102,101] } 
+[0;32mI (58236) MQTT_EXAMPLE: sent data publish successful, msg_id=36997[0m
+[0;32mI (58246) MQTT_EXAMPLE: sent log publish successful, msg_id=42991[0m
+[0;32mI (60266) RX_TASK: Read 91 bytes: 'P;D;0;[102,102,102,102,103,102,103,102,102,102,103,102,103,102,102,101,102,102,101,101];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [102,102,102,102,103,102,103,102,102,102,103,102,103,102,102,101,102,102,101,101] } 
+[0;32mI (60276) MQTT_EXAMPLE: sent data publish successful, msg_id=26746[0m
+[0;32mI (60286) MQTT_EXAMPLE: sent log publish successful, msg_id=35791[0m
+[0;32mI (62306) RX_TASK: Read 91 bytes: 'P;D;0;[103,102,103,102,102,103,102,102,102,103,102,102,101,101,102,101,101,101,102,102];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [103,102,103,102,102,103,102,102,102,103,102,102,101,101,102,101,101,101,102,102] } 
+[0;32mI (62316) MQTT_EXAMPLE: sent data publish successful, msg_id=48117[0m
+[0;32mI (62326) MQTT_EXAMPLE: sent log publish successful, msg_id=52421[0m
+[0;32mI (64346) RX_TASK: Read 91 bytes: 'P;D;0;[103,103,104,103,103,103,103,103,101,103,102,102,102,102,102,102,102,102,103,103];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [103,103,104,103,103,103,103,103,101,103,102,102,102,102,102,102,102,102,103,103] } 
+[0;32mI (64356) MQTT_EXAMPLE: sent data publish successful, msg_id=27163[0m
+[0;32mI (64366) MQTT_EXAMPLE: sent log publish successful, msg_id=5710[0m
+[0;32mI (66386) RX_TASK: Read 91 bytes: 'P;D;0;[102,103,102,103,103,102,102,103,102,102,103,102,103,103,103,103,104,104,104,104];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [102,103,102,103,103,102,102,103,102,102,103,102,103,103,103,103,104,104,104,104] } 
+[0;32mI (66396) MQTT_EXAMPLE: sent data publish successful, msg_id=2666[0m
+[0;32mI (66406) MQTT_EXAMPLE: sent log publish successful, msg_id=26983[0m
+[0;32mI (68426) RX_TASK: Read 91 bytes: 'P;D;0;[103,103,103,103,104,103,104,104,104,104,104,105,104,105,105,104,105,105,105,105];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [103,103,103,103,104,103,104,104,104,104,104,105,104,105,105,104,105,105,105,105] } 
+[0;32mI (68436) MQTT_EXAMPLE: sent data publish successful, msg_id=12803[0m
+[0;32mI (68446) MQTT_EXAMPLE: sent log publish successful, msg_id=54340[0m
+[0;32mI (70466) RX_TASK: Read 91 bytes: 'P;D;0;[103,104,104,104,104,104,105,104,104,104,105,105,105,105,104,105,105,105,105,104];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [103,104,104,104,104,104,105,104,104,104,105,105,105,105,104,105,105,105,105,104] } 
+[0;32mI (70476) MQTT_EXAMPLE: sent data publish successful, msg_id=32988[0m
+[0;32mI (70486) MQTT_EXAMPLE: sent log publish successful, msg_id=49861[0m
+[0;32mI (72506) RX_TASK: Read 91 bytes: 'P;D;0;[104,104,105,104,104,104,105,104,105,104,105,104,104,105,104,104,104,105,104,104];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [104,104,105,104,104,104,105,104,105,104,105,104,104,105,104,104,104,105,104,104] } 
+[0;32mI (72516) MQTT_EXAMPLE: sent data publish successful, msg_id=42330[0m
+[0;32mI (72526) MQTT_EXAMPLE: sent log publish successful, msg_id=5479[0m
+[0;32mI (74546) RX_TASK: Read 91 bytes: 'P;D;0;[105,103,104,105,105,104,104,104,105,105,104,104,104,105,104,104,104,103,103,104];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [105,103,104,105,105,104,104,104,105,105,104,104,104,105,104,104,104,103,103,104] } 
+[0;32mI (74556) MQTT_EXAMPLE: sent data publish successful, msg_id=46295[0m
+[0;32mI (74566) MQTT_EXAMPLE: sent log publish successful, msg_id=42068[0m
+[0;32mI (76586) RX_TASK: Read 91 bytes: 'P;D;0;[104,104,104,105,105,104,105,104,104,105,104,104,103,104,103,104,102,102,102,102];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [104,104,104,105,105,104,105,104,104,105,104,104,103,104,103,104,102,102,102,102] } 
+[0;32mI (76596) MQTT_EXAMPLE: sent data publish successful, msg_id=9241[0m
+[0;32mI (76606) MQTT_EXAMPLE: sent log publish successful, msg_id=47309[0m
+[0;32mI (78626) RX_TASK: Read 91 bytes: 'P;D;0;[103,103,104,103,103,103,103,102,102,101,102,101,101,101,101,101,101,101,100,100];$
+'[0m
+tamaño datos completos a enviar 108
+mqtt data: { "dev_id": 4, "IntLum": [103,103,104,103,103,103,103,102,102,101,102,101,101,101,101,101,101,101,100,100] } 
+[0;32mI (78636) MQTT_EXAMPLE: sent data publish successful, msg_id=43093[0m
+[0;32mI (78646) MQTT_EXAMPLE: sent log publish successful, msg_id=35348[0m
+[0;32mI (80666) RX_TASK: Read 79 bytes: 'P;D;0;[101,101,101,100,100,100,100,99,99,99,99,99,99,99,98,99,99,99,100,99];$
+'[0m
+tamaño datos completos a enviar 96
+mqtt data: { "dev_id": 4, "IntLum": [101,101,101,100,100,100,100,99,99,99,99,99,99,99,98,99,99,99,100,99] } 
+[0;32mI (80676) MQTT_EXAMPLE: sent data publish successful, msg_id=60914[0m
+[0;32mI (80686) MQTT_EXAMPLE: sent log publish successful, msg_id=25616[0m
+[0;32mI (82706) RX_TASK: Read 75 bytes: 'P;D;0;[100,100,101,99,100,99,99,99,99,99,99,98,98,97,98,97,97,97,96,97];$
+'[0m
+tamaño datos completos a enviar 92
+mqtt data: { "dev_id": 4, "IntLum": [100,100,101,99,100,99,99,99,99,99,99,98,98,97,98,97,97,97,96,97] } 
+[0;32mI (82716) MQTT_EXAMPLE: sent data publish successful, msg_id=54903[0m
+[0;32mI (82726) MQTT_EXAMPLE: sent log publish successful, msg_id=54956[0m
+[0;32mI (84746) RX_TASK: Read 71 bytes: 'P;D;0;[98,98,98,97,97,97,97,97,97,97,97,96,96,96,96,96,95,95,95,94];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [98,98,98,97,97,97,97,97,97,97,97,96,96,96,96,96,95,95,95,94] } 
+[0;32mI (84756) MQTT_EXAMPLE: sent data publish successful, msg_id=31506[0m
+[0;32mI (84766) MQTT_EXAMPLE: sent log publish successful, msg_id=53735[0m
+[0;32mI (86786) RX_TASK: Read 71 bytes: 'P;D;0;[96,96,96,96,96,95,96,96,95,94,95,94,95,94,94,93,94,94,93,94];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [96,96,96,96,96,95,96,96,95,94,95,94,95,94,94,93,94,94,93,94] } 
+[0;32mI (86796) MQTT_EXAMPLE: sent data publish successful, msg_id=59666[0m
+[0;32mI (86806) MQTT_EXAMPLE: sent log publish successful, msg_id=31287[0m
+[0;32mI (88826) RX_TASK: Read 71 bytes: 'P;D;0;[95,95,95,95,95,94,95,95,94,94,94,94,93,94,94,93,93,93,93,93];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [95,95,95,95,95,94,95,95,94,94,94,94,93,94,94,93,93,93,93,93] } 
+[0;32mI (88836) MQTT_EXAMPLE: sent data publish successful, msg_id=35146[0m
+[0;32mI (88846) MQTT_EXAMPLE: sent log publish successful, msg_id=62629[0m
+[0;32mI (90866) RX_TASK: Read 71 bytes: 'P;D;0;[95,95,94,94,95,95,95,94,94,94,93,94,93,93,93,93,93,92,93,93];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [95,95,94,94,95,95,95,94,94,94,93,94,93,93,93,93,93,92,93,93] } 
+[0;32mI (90876) MQTT_EXAMPLE: sent data publish successful, msg_id=50211[0m
+[0;32mI (90886) MQTT_EXAMPLE: sent log publish successful, msg_id=19541[0m
+[0;32mI (92906) RX_TASK: Read 71 bytes: 'P;D;0;[95,94,95,94,95,95,95,95,95,95,94,95,94,94,94,94,94,93,94,94];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [95,94,95,94,95,95,95,95,95,95,94,95,94,94,94,94,94,93,94,94] } 
+[0;32mI (92916) MQTT_EXAMPLE: sent data publish successful, msg_id=49379[0m
+[0;32mI (92926) MQTT_EXAMPLE: sent log publish successful, msg_id=22734[0m
+[0;32mI (94946) RX_TASK: Read 71 bytes: 'P;D;0;[93,93,94,94,94,94,94,94,93,93,95,94,93,94,94,95,94,94,94,93];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [93,93,94,94,94,94,94,94,93,93,95,94,93,94,94,95,94,94,94,93] } 
+[0;32mI (94956) MQTT_EXAMPLE: sent data publish successful, msg_id=57528[0m
+[0;32mI (94966) MQTT_EXAMPLE: sent log publish successful, msg_id=60799[0m
+[0;32mI (96986) RX_TASK: Read 71 bytes: 'P;D;0;[93,93,93,94,93,94,93,94,94,93,94,94,94,94,94,93,94,93,94,94];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [93,93,93,94,93,94,93,94,94,93,94,94,94,94,94,93,94,93,94,94] } 
+[0;32mI (96996) MQTT_EXAMPLE: sent data publish successful, msg_id=12394[0m
+[0;32mI (97006) MQTT_EXAMPLE: sent log publish successful, msg_id=3310[0m
+[0;32mI (99026) RX_TASK: Read 71 bytes: 'P;D;0;[92,93,92,92,92,92,92,92,92,92,94,93,92,93,93,92,93,93,93,92];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [92,93,92,92,92,92,92,92,92,92,94,93,92,93,93,92,93,93,93,92] } 
+[0;32mI (99036) MQTT_EXAMPLE: sent data publish successful, msg_id=10842[0m
+[0;32mI (99046) MQTT_EXAMPLE: sent log publish successful, msg_id=50961[0m
+[0;32mI (101066) RX_TASK: Read 71 bytes: 'P;D;0;[91,92,91,91,91,91,91,91,90,90,90,91,91,90,92,91,90,91,91,92];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [91,92,91,91,91,91,91,91,90,90,90,91,91,90,92,91,90,91,91,92] } 
+[0;32mI (101076) MQTT_EXAMPLE: sent data publish successful, msg_id=63361[0m
+[0;32mI (101086) MQTT_EXAMPLE: sent log publish successful, msg_id=46554[0m
+[0;32mI (103106) RX_TASK: Read 71 bytes: 'P;D;0;[92,92,92,91,91,90,91,91,90,90,90,90,90,90,90,91,90,90,90,90];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [92,92,92,91,91,90,91,91,90,90,90,90,90,90,90,91,90,90,90,90] } 
+[0;32mI (103116) MQTT_EXAMPLE: sent data publish successful, msg_id=46324[0m
+[0;32mI (103126) MQTT_EXAMPLE: sent log publish successful, msg_id=24746[0m
+[0;32mI (105146) RX_TASK: Read 71 bytes: 'P;D;0;[92,91,91,91,91,90,91,90,89,91,90,90,89,89,90,89,89,89,90,90];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [92,91,91,91,91,90,91,90,89,91,90,90,89,89,90,89,89,89,90,90] } 
+[0;32mI (105156) MQTT_EXAMPLE: sent data publish successful, msg_id=46630[0m
+[0;32mI (105166) MQTT_EXAMPLE: sent log publish successful, msg_id=35388[0m
+[0;32mI (107186) RX_TASK: Read 71 bytes: 'P;D;0;[91,92,91,91,92,91,91,91,90,90,90,89,90,89,89,89,89,88,88,88];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [91,92,91,91,92,91,91,91,90,90,90,89,90,89,89,89,89,88,88,88] } 
+[0;32mI (107196) MQTT_EXAMPLE: sent data publish successful, msg_id=36593[0m
+[0;32mI (107206) MQTT_EXAMPLE: sent log publish successful, msg_id=20328[0m
+[0;32mI (109226) RX_TASK: Read 71 bytes: 'P;D;0;[90,90,90,90,90,90,91,89,90,91,91,89,90,90,90,89,89,90,88,89];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [90,90,90,90,90,90,91,89,90,91,91,89,90,90,90,89,89,90,88,89] } 
+[0;32mI (109236) MQTT_EXAMPLE: sent data publish successful, msg_id=11396[0m
+[0;32mI (109246) MQTT_EXAMPLE: sent log publish successful, msg_id=4821[0m
+[0;32mI (111266) RX_TASK: Read 71 bytes: 'P;D;0;[88,88,88,88,89,89,89,88,89,88,89,88,89,89,89,89,89,88,88,89];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [88,88,88,88,89,89,89,88,89,88,89,88,89,89,89,89,89,88,88,89] } 
+[0;32mI (111276) MQTT_EXAMPLE: sent data publish successful, msg_id=29261[0m
+[0;32mI (111286) MQTT_EXAMPLE: sent log publish successful, msg_id=44826[0m
+[0;32mI (113306) RX_TASK: Read 71 bytes: 'P;D;0;[87,86,87,86,86,87,87,86,86,87,87,87,87,87,87,87,87,88,88,88];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [87,86,87,86,86,87,87,86,86,87,87,87,87,87,87,87,87,88,88,88] } 
+[0;32mI (113316) MQTT_EXAMPLE: sent data publish successful, msg_id=26151[0m
+[0;32mI (113326) MQTT_EXAMPLE: sent log publish successful, msg_id=14209[0m
+[0;32mI (115346) RX_TASK: Read 71 bytes: 'P;D;0;[87,87,86,86,85,86,86,86,86,86,86,86,86,86,87,87,86,86,86,87];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [87,87,86,86,85,86,86,86,86,86,86,86,86,86,87,87,86,86,86,87] } 
+[0;32mI (115356) MQTT_EXAMPLE: sent data publish successful, msg_id=1762[0m
+[0;32mI (115366) MQTT_EXAMPLE: sent log publish successful, msg_id=18476[0m
+[0;32mI (117386) RX_TASK: Read 71 bytes: 'P;D;0;[86,86,87,87,85,86,85,85,85,85,85,85,85,84,84,84,84,84,85,84];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [86,86,87,87,85,86,85,85,85,85,85,85,85,84,84,84,84,84,85,84] } 
+[0;32mI (117396) MQTT_EXAMPLE: sent data publish successful, msg_id=52865[0m
+[0;32mI (117406) MQTT_EXAMPLE: sent log publish successful, msg_id=13352[0m
+[0;32mI (119426) RX_TASK: Read 71 bytes: 'P;D;0;[86,86,86,86,87,86,86,86,86,85,85,85,85,85,85,85,84,85,84,85];$
+'[0m
+tamaño datos completos a enviar 88
+mqtt data: { "dev_id": 4, "IntLum": [86,86,86,86,87,86,86,86,86,85,85,85,85,85,85,85,84,85,84,85] } 
+[0;32mI (119436) MQTT_EXAMPLE: sent data publish successful, msg_id=10320[0m
+[0;32mI (119446) MQTT_EXAMPLE: sent log publish successful, msg_id=37902[0m
+[0;32mI (121466) RX_TASK: Read 11 bytes: 'P;S;0;0;$
+'[0m
+[0;32mI (121466) MQTT_EXAMPLE: sent log publish successful, msg_id=1272[0m
+[0;32mI (142676) RX_TASK: Read 11 bytes: 'P;A;0;0;$
+'[0m
+[0;32mI (142676) MQTT_EXAMPLE: sent log publish successful, msg_id=15168[0m

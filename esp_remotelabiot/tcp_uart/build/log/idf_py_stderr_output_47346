@@ -1,0 +1,56 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x420a0424: _vfprintf_r at ??:?
+[0m
+[0;33m0x420a0424: _vfprintf_r at ??:?
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x4038c78e: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x40380001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x40048b82: software_reset in ROM
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0mException in thread Thread-2 (_run_outer):
+Traceback (most recent call last):
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 76, in run
+    data = self.serial.read(self.serial.in_waiting or 1)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/serial/serialposix.py", line 595, in read
+    raise SerialException(
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 83, in run
+    self.close_serial()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 105, in close_serial
+    self.set_closing_wait(delay_sec=1)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 119, in set_closing_wait
+    fcntl.ioctl(self.serial.fd, termios.TIOCGSERIAL, buf)
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 100, in run
+    self.close_serial()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 105, in close_serial
+    self.set_closing_wait(delay_sec=1)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 119, in set_closing_wait
+    fcntl.ioctl(self.serial.fd, termios.TIOCGSERIAL, buf)
+OSError: [Errno 5] Input/output error
+[0m

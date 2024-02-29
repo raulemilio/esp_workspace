@@ -1,0 +1,56 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x420058d2: phy_set_tsens_power at /home/rome/esp/esp-idf/components/esp_phy/src/phy_override.c:84
+[0m
+[0;33m0x420648fa: esp_phy_disable at /home/rome/esp/esp-idf/components/esp_phy/src/phy_init.c:309
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x420058de: phy_get_tsens_value at /home/rome/esp/esp-idf/components/esp_phy/src/phy_override.c:90
+[0m
+[0;33m0x420648fa: esp_phy_disable at /home/rome/esp/esp-idf/components/esp_phy/src/phy_init.c:309
+[0m
+[0;33m0x40389472: vPortClearInterruptMask at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:385
+[0m
+[0;33m0x40388c9e: xTaskGetCurrentTaskHandle at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5019
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b82e: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x403871e8: xQueueGenericSend at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:882
+[0m
+[0;33m0x42007266: uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x42008314: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:213
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b82e: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x42007256: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b82e: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+Exception in thread Thread-2 (_run_outer):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 100, in run
+    self.close_serial()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 105, in close_serial
+    self.set_closing_wait(delay_sec=1)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 128, in set_closing_wait
+    fcntl.ioctl(self.serial.fd, termios.TIOCSSERIAL, buf)
+PermissionError: [Errno 1] Operation not permitted
+[0m

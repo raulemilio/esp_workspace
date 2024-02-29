@@ -1,0 +1,811 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Feb  7 2024 09:33:49[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (33) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (90) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09678h ( 38520) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=000196a0 vaddr=3fc8b800 size=01148h (  4424) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001a7f0 vaddr=40380000 size=05828h ( 22568) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1aea8h (110248) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=0003aed0 vaddr=40385828 size=05eb0h ( 24240) load[0m
+[0;32mI (150) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (150) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Unicore app[0m
+[0;32mI (162) cpu_start: Pro cpu up.[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) cpu_start: Application information:[0m
+[0;32mI (174) cpu_start: Project name:     uart_async_rxtxtasks[0m
+[0;32mI (180) cpu_start: App version:      d2fb13c-dirty[0m
+[0;32mI (185) cpu_start: Compile time:     Feb  7 2024 09:33:38[0m
+[0;32mI (191) cpu_start: ELF file SHA256:  beb88f1e7f17e829...[0m
+[0;32mI (197) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (202) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (207) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (212) cpu_start: Chip rev:         v0.3[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC8D7A0 len 0004EF70 (315 KiB): DRAM[0m
+[0;32mI (230) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (236) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (244) spi_flash: detected chip: generic[0m
+[0;32mI (247) spi_flash: flash io: dio[0m
+[0;33mW (251) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (265) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (271) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (278) app_start: Starting scheduler on CPU0[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (283) main_task: Calling app_main()[0m
+[0;32mI (283) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (293) main_task: Returned from app_main()[0m
+[0;32mI (1293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (1293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (1293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (2293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (3293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (3293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (3293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (4293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (5293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (5293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (5293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (6293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (7293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (7293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (7293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (8293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (9293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (9293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (9293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (10293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (11293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (11293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (11293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (12293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (13293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (13293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (13293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (14293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (15293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (15293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (15293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (16293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (17293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (17293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (17293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (18293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (19293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (19293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (19293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (20293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (21293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (21293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (21293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (22293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (23293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (23293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (23293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (24293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (25293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (25293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (25293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (26293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (27293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (27293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (27293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (28293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (29293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (29293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (29293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (30293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (31293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (31293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (31293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (32293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (33293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (33293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (33293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (34293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (35293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (35293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (35293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (36293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (37293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (37293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (37293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (38293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (39293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (39293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (39293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (40293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (41293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (41293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (41293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (42293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (43293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (43293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (43293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (44293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (45293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (45293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (45293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (46293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (47293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (47293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (47293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (48293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (49293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (49293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (49293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (50293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (51293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (51293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (51293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (52293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (53293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (53293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (53293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (54293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (55293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (55293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (55293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (56293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (57293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (57293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (57293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (58293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (59293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (59293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (59293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (60293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (61293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (61293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (61293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (62293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (63293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (63293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (63293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (64293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (65293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (65293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (65293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (66293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (67293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (67293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (67293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (68293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (69293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (69293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (69293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (70293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (71293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (71293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (71293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (72293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (73293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (73293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (73293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (74293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (75293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (75293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (75293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (76293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (77293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (77293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (77293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (78293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (79293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (79293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (79293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (80293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (81293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (81293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (81293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (82293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (83293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (83293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (83293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (84293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (85293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (85293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (85293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (86293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (87293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (87293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (87293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (88293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (89293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (89293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (89293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (90293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (91293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (91293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (91293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (92293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (93293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (93293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (93293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (94293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (95293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (95293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (95293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (96293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (97293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (97293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (97293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (98293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (99293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (99293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (99293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (100293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (101293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (101293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (101293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (102293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (103293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (103293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (103293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (104293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (105293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (105293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (105293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (106293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (107293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (107293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (107293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (108293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (109293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (109293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (109293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (110293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (111293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (111293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (111293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (112293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (113293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (113293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (113293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (114293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (115293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (115293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (115293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (116293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (117293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (117293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (117293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (118293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (119293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (119293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (119293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (120293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (121293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (121293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (121293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (122293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (123293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (123293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (123293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (124293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (125293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (125293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (125293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (126293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (127293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (127293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (127293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (128293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (129293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (129293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (129293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (130293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (131293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (131293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (131293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (132293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (133293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (133293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (133293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (134293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (135293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (135293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (135293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (136293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (137293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (137293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (137293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (138293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (139293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (139293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (139293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (140293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (141293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (141293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (141293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (142293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (143293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (143293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (143293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (144293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (145293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (145293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (145293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (146293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (147293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (147293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (147293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (148293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (149293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (149293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (149293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (150293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (151293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (151293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (151293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (152293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (153293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (153293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (153293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (154293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (155293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (155293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (155293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (156293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (157293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (157293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (157293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (158293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (159293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (159293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (159293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (160293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (161293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (161293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (161293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (162293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (163293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (163293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (163293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (164293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (165293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (165293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (165293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (166293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (167293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (167293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (167293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (168293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (169293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (169293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (169293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (170293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (171293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (171293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (171293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (172293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (173293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (173293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (173293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (174293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (175293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (175293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (175293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (176293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (177293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (177293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (177293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (178293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (179293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (179293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (179293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (180293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (181293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (181293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (181293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (182293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (183293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (183293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (183293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (184293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (185293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (185293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (185293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (186293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (187293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (187293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (187293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (188293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (189293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (189293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (189293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (190293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (191293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (191293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (191293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (192293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (193293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (193293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (193293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (194293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (195293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (195293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (195293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (196293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (197293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (197293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (197293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (198293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (199293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (199293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (199293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (200293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (201293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (201293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (201293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (202293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (203293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (203293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (203293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (204293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (205293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (205293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (205293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (206293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (207293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (207293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (207293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (208293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (209293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (209293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (209293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (210293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (211293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (211293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (211293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (212293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (213293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (213293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (213293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (214293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (215293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (215293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (215293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (216293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (217293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (217293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (217293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (218293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (219293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (219293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (219293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (220293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (221293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (221293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (221293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (222293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (223293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (223293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (223293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (224293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (225293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (225293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (225293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (226293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (227293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (227293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (227293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (228293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (229293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (229293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (229293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (230293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (231293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (231293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (231293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (232293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (233293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (233293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (233293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (234293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (235293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (235293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (235293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (236293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (237293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (237293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (237293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (238293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (239293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (239293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (239293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (240293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (241293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (241293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (241293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (242293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (243293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (243293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (243293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (244293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (245293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (245293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (245293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (246293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (247293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (247293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (247293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (248293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (249293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (249293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (249293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (250293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (251293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (251293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (251293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (252293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (253293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (253293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (253293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (254293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (255293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (255293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (255293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (256293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (257293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (257293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (257293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (258293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (259293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (259293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (259293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (260293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (261293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (261293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (261293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (262293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (263293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (263293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (263293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (264293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (265293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (265293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (265293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (266293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (267293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (267293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (267293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (268293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (269293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (269293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (269293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (270293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (271293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (271293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (271293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (272293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (273293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (273293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (273293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (274293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (275293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (275293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (275293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (276293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (277293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (277293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (277293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (278293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (279293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (279293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (279293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (280293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (281293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (281293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (281293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (282293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (283293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (283293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (283293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (284293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (285293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (285293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (285293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (286293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (287293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (287293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (287293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (288293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (289293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (289293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (289293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (290293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (291293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (291293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (291293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (292293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (293293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (293293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (293293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (294293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (295293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (295293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (295293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (296293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (297293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (297293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (297293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (298293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (299293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (299293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (299293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (300293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (301293) RX_TASK: Read 26 bytes: 'Hello world desde Esp32C3
+'[0m
+[0;32mI (301293) RX_TASK: 0x3fc92654   48 65 6c 6c 6f 20 77 6f  72 6c 64 20 64 65 73 64  |Hello world desd|[0m
+[0;32mI (301293) RX_TASK: 0x3fc92664   65 20 45 73 70 33 32 43  33 0a                    |e Esp32C3.|[0m
+[0;32mI (302293) TX_TASK: Wrote 26 bytes[0m

@@ -1,0 +1,20 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+Exception in thread Thread-2 (_run_outer):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 100, in run
+    self.close_serial()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 105, in close_serial
+    self.set_closing_wait(delay_sec=1)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 128, in set_closing_wait
+    fcntl.ioctl(self.serial.fd, termios.TIOCSSERIAL, buf)
+PermissionError: [Errno 1] Operation not permitted
+[0m

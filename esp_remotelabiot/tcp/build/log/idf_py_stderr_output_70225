@@ -1,0 +1,66 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x4206f214: tcp_receive at /home/rome/esp/esp-idf/components/lwip/lwip/src/core/tcp_in.c:1480
+[0m
+[0;33m0x4206ef3a: tcp_receive at /home/rome/esp/esp-idf/components/lwip/lwip/src/core/tcp_in.c:1308 (discriminator 4)
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40389596: vPortClearInterruptMask at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:385
+[0m
+[0;33m0x40388e10: xTaskGetSchedulerState at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5066
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b952: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x40381708: lock_release_generic at /home/rome/esp/esp-idf/components/newlib/locks.c:173
+[0m
+[0;33m0x42007258: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40000000: _start in ROM
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b952: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x40389596: vPortClearInterruptMask at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:385
+[0m
+[0;33m0x40388e10: xTaskGetSchedulerState at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5066
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40000000: _start in ROM
+[0m
+[0;33m0x4038b952: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x403877b4: xQueueReceive at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1484
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/home/rome/esp/esp_workspace/esp_workspace/tcp/build/mqtt_tcp.elf', '-ex', 'target remote | "/home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python" "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/../gdb_panic_server.py" --target esp32c3 "/tmp/tmp3rfil81b"', '-ex', 'bt']' returned non-zero exit status 1.
+b'Traceback (most recent call last):\n  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/../gdb_panic_server.py", line 291, in <module>\n    main()\n  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/../gdb_panic_server.py", line 281, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n  File "/usr/lib/python3.10/codecs.py", line 322, in decode\n    (result, consumed) = self._buffer_decode(data, self.errors, final)\nUnicodeDecodeError: \'utf-8\' codec can\'t decode byte 0xc9 in position 5: invalid continuation byte\nRemote communication error.  Target disconnected.: Conexi\xc3\xb3n reinicializada por la m\xc3\xa1quina remota.\nNo stack.\n'
+
+[0m
+Exception in thread Thread-2 (_run_outer):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 100, in run
+    self.close_serial()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 105, in close_serial
+    self.set_closing_wait(delay_sec=1)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 128, in set_closing_wait
+    fcntl.ioctl(self.serial.fd, termios.TIOCSSERIAL, buf)
+PermissionError: [Errno 1] Operation not permitted
+[0m

@@ -1,0 +1,119 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/bootloader/esp-idf/esptool_py && /home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/rome/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/bootloader/bootloader.bin
+Bootloader binary size 0x5030 bytes. 0x2fd0 bytes (37%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c: In function 'rx_task':
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:411:40: warning: passing argument 1 of 'strcpy' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  411 |                                 strcpy(state, state_fin);// Medición terminada
+      |                                        ^~~~~
+In file included from /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:11:
+/home/rome/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/riscv32-esp-elf/sys-include/string.h:38:18: note: expected 'char * restrict' but argument is of type 'const char *'
+   38 | char    *strcpy (char *__restrict, const char *__restrict);
+      |                  ^
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:419:40: warning: passing argument 1 of 'strcpy' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  419 |                                 strcpy(state, state_inicializado);// el sistema se inicializó correctamente
+      |                                        ^~~~~
+/home/rome/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/riscv32-esp-elf/sys-include/string.h:38:18: note: expected 'char * restrict' but argument is of type 'const char *'
+   38 | char    *strcpy (char *__restrict, const char *__restrict);
+      |                  ^
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:425:48: warning: passing argument 1 of 'strcpy' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  425 |                                         strcpy(state, state_expAmed);// Experimento A en medición
+      |                                                ^~~~~
+/home/rome/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/riscv32-esp-elf/sys-include/string.h:38:18: note: expected 'char * restrict' but argument is of type 'const char *'
+   38 | char    *strcpy (char *__restrict, const char *__restrict);
+      |                  ^
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:431:48: warning: passing argument 1 of 'strcpy' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  431 |                                         strcpy(state, state_expBmed);// Experimento B en medición
+      |                                                ^~~~~
+/home/rome/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/riscv32-esp-elf/sys-include/string.h:38:18: note: expected 'char * restrict' but argument is of type 'const char *'
+   38 | char    *strcpy (char *__restrict, const char *__restrict);
+      |                  ^
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:320:13: warning: variable 'flag_runB' set but not used [-Wunused-but-set-variable]
+  320 |         int flag_runB = 0; // 0 experimento A sin iniciar | habilitado para solicitar datos
+      |             ^~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:319:13: warning: variable 'flag_runA' set but not used [-Wunused-but-set-variable]
+  319 |         int flag_runA = 0; // 0 experimento A sin iniciar | habilitado para solicitar datos
+      |             ^~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:296:13: warning: variable 'indexDatos' set but not used [-Wunused-but-set-variable]
+  296 |         int indexDatos=0;// index para guardar los datos útiles
+      |             ^~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c: At top level:
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:91:21: warning: 's_task_handle' defined but not used [-Wunused-variable]
+   91 | static TaskHandle_t s_task_handle;
+      |                     ^~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable mqtt_tcp.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/mqtt_tcp.bin
+[7/8] cd /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/esp-idf/esptool_py && /home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/rome/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/partition_table/partition-table.bin /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/mqtt_tcp.bin
+mqtt_tcp.bin binary size 0xe50a0 bytes. Smallest app partition is 0x100000 bytes. 0x1af60 bytes (11%) free.
+[7/8] cd /home/rome/esp/esp-idf/components/esptool_py && /home/rome/.espressif/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/home/rome/esp/esp-idf -D "SERIAL_TOOL=/home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/rome/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build -P /home/rome/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c3 -p /dev/ttyUSB1 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 mqtt_tcp.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev1
+Serial port /dev/ttyUSB1
+Connecting....
+Chip is ESP32-C3 (QFN32) (revision v0.3)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 58:cf:79:07:53:84
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f5fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20528 bytes to 12602...
+Writing at 0x00000000... (100 %)
+Wrote 20528 bytes (12602 compressed) at 0x00000000 in 0.8 seconds (effective 200.7 kbit/s)...
+Hash of data verified.
+Compressed 938144 bytes to 538463...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c781... (6 %)
+Writing at 0x00023aa5... (9 %)
+Writing at 0x00029584... (12 %)
+Writing at 0x00034fb4... (15 %)
+Writing at 0x0003ce29... (18 %)
+Writing at 0x00043132... (21 %)
+Writing at 0x0004a709... (24 %)
+Writing at 0x000525f9... (27 %)
+Writing at 0x00059632... (30 %)
+Writing at 0x00060a34... (33 %)
+Writing at 0x0006713f... (36 %)
+Writing at 0x0006d55f... (39 %)
+Writing at 0x00074157... (42 %)
+Writing at 0x0007a59a... (45 %)
+Writing at 0x00080bc8... (48 %)
+Writing at 0x00086b1a... (51 %)
+Writing at 0x0008cd37... (54 %)
+Writing at 0x00092bc1... (57 %)
+Writing at 0x00098fc1... (60 %)
+Writing at 0x0009f587... (63 %)
+Writing at 0x000a5491... (66 %)
+Writing at 0x000ac236... (69 %)
+Writing at 0x000b2faf... (72 %)
+Writing at 0x000b9f0a... (75 %)
+Writing at 0x000c1186... (78 %)
+Writing at 0x000c779d... (81 %)
+Writing at 0x000cd66e... (84 %)
+Writing at 0x000d3d16... (87 %)
+Writing at 0x000d9ddb... (90 %)
+Writing at 0x000e0c5c... (93 %)
+Writing at 0x000e8420... (96 %)
+Writing at 0x000ef550... (100 %)
+Wrote 938144 bytes (538463 compressed) at 0x00010000 in 15.3 seconds (effective 490.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 287.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,457 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xf (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Feb  9 2024 11:34:49[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (33) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (90) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=269c8h (158152) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=000369f0 vaddr=3fc91600 size=028ech ( 10476) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=000392e4 vaddr=40380000 size=06d34h ( 27956) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=aa660h (697952) map[0m
+[0;32mI (249) esp_image: segment 4: paddr=000ea688 vaddr=40386d34 size=0a844h ( 43076) load[0m
+[0;32mI (263) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (263) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) cpu_start: Unicore app[0m
+[0;32mI (275) cpu_start: Pro cpu up.[0m
+[0;32mI (284) cpu_start: Pro cpu start user code[0m
+[0;32mI (284) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (284) cpu_start: Application information:[0m
+[0;32mI (287) cpu_start: Project name:     mqtt_tcp[0m
+[0;32mI (292) cpu_start: App version:      d2fb13c-dirty[0m
+[0;32mI (297) cpu_start: Compile time:     Feb 17 2024 10:14:55[0m
+[0;32mI (303) cpu_start: ELF file SHA256:  6cf0a7181ad8d514...[0m
+[0;32mI (309) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (314) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (319) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (324) cpu_start: Chip rev:         v0.3[0m
+[0;32mI (328) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (336) heap_init: At 3FC98590 len 00044180 (272 KiB): DRAM[0m
+[0;32mI (342) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (349) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (356) spi_flash: detected chip: generic[0m
+[0;32mI (360) spi_flash: flash io: dio[0m
+[0;33mW (363) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (377) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (383) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (391) app_start: Starting scheduler on CPU0[0m
+[0;32mI (395) main_task: Started on CPU0[0m
+[0;32mI (395) main_task: Calling app_main()[0m
+[0;32mI (395) MQTT_EXAMPLE: [APP] Startup..[0m
+[0;32mI (405) MQTT_EXAMPLE: [APP] Free memory: 281576 bytes[0m
+[0;32mI (405) MQTT_EXAMPLE: [APP] IDF version: v5.1.1[0m
+[0;32mI (415) example_connect: Start example_connect.[0m
+[0;32mI (425) pp: pp rom version: 9387209[0m
+[0;32mI (425) net80211: net80211 rom version: 9387209[0m
+I (435) wifi:wifi driver task: 3fca1078, prio:23, stack:6656, core=0
+I (435) wifi:wifi firmware version: ce9244d
+I (435) wifi:wifi certification version: v7.0
+I (445) wifi:config NVS flash: enabled
+I (445) wifi:config nano formating: disabled
+I (445) wifi:Init data frame dynamic rx buffer num: 32
+I (455) wifi:Init management frame dynamic rx buffer num: 32
+I (465) wifi:Init management short buffer num: 32
+I (465) wifi:Init dynamic tx buffer num: 32
+I (465) wifi:Init static tx FG buffer num: 2
+I (475) wifi:Init static rx buffer size: 1600
+I (475) wifi:Init static rx buffer num: 10
+I (485) wifi:Init dynamic rx buffer num: 32
+[0;32mI (485) wifi_init: rx ba win: 6[0m
+[0;32mI (485) wifi_init: tcpip mbox: 32[0m
+[0;32mI (495) wifi_init: udp mbox: 6[0m
+[0;32mI (495) wifi_init: tcp mbox: 6[0m
+[0;32mI (495) wifi_init: tcp tx win: 5744[0m
+[0;32mI (505) wifi_init: tcp rx win: 5744[0m
+[0;32mI (505) wifi_init: tcp mss: 1440[0m
+[0;32mI (515) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (515) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (525) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12[0m
+I (565) wifi:mode : sta (58:cf:79:07:53:84)
+I (565) wifi:enable tsf
+[0;32mI (565) example_connect: Connecting to Fibertel WiFi323 2.4GHz...[0m
+[0;32mI (565) example_connect: Waiting for IP(s)[0m
+I (2975) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (3655) wifi:state: init -> auth (b0)
+I (3655) wifi:state: auth -> assoc (0)
+I (3655) wifi:state: assoc -> run (10)
+I (3665) wifi:<ba-add>idx:0 (ifx:0, 44:ad:b1:28:eb:d1), tid:0, ssn:0, winSize:64
+I (3675) wifi:<ba-add>idx:1 (ifx:0, 44:ad:b1:28:eb:d1), tid:5, ssn:0, winSize:64
+I (3685) wifi:connected with Fibertel WiFi323 2.4GHz, aid = 3, channel 11, BW20, bssid = 44:ad:b1:28:eb:d1
+I (3685) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (3685) wifi:pm start, type: 1
+
+I (3685) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (3765) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5415) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:5acf:79ff:fe07:5384, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (7695) esp_netif_handlers: example_netif_sta ip: 192.168.0.101, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (7695) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.101[0m
+[0;32mI (7695) example_common: Connected to example_netif_sta[0m
+[0;32mI (7705) example_common: - IPv4 address: 192.168.0.101,[0m
+[0;32mI (7715) example_common: - IPv6 address: fe80:0000:0000:0000:5acf:79ff:fe07:5384, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (7725) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (7725) main_task: Returned from app_main()[0m
+[0;32mI (8175) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8175) MQTT_EXAMPLE: sent subscribe successful, msg_id=17303[0m
+[0;32mI (8175) MQTT_EXAMPLE: sent subscribe successful, msg_id=19554[0m
+[0;32mI (8385) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=17303[0m
+[0;32mI (8685) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=19554[0m
+[0;32mI (16565) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (17575) RX_TASK: Read 3 bytes: '0
+'[0m
+[0;32mI (18585) RX_TASK: Read 3 bytes: '0
+'[0m
+[0;32mI (19595) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (20605) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (21615) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (22625) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (23635) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (24645) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (25655) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (26665) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (27675) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (28685) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (29695) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (30705) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (31715) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (32725) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (33735) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (34745) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (35755) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (36765) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (37775) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (38785) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (39795) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (40805) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (41815) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (42825) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (43835) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (44845) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (45855) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (46865) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (47875) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (48885) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (49895) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (50905) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (51915) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (52925) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (53935) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (54945) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (55955) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (56965) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (57975) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (58985) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (59995) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (61005) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (62015) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (63025) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (64035) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (65045) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (66055) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (67065) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (68075) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (69085) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (70095) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (71105) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (72115) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (73125) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (74135) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (75145) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (76155) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (77165) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (78175) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (79185) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (80195) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (81205) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (82215) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (83225) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (84235) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (85245) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (86255) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (87265) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (88275) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (89285) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (90295) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (91305) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (92315) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (93325) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (94335) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (95345) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (96355) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (97365) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (98375) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (99385) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (100395) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (101405) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (102415) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (103425) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (104435) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (105445) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (106455) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (107465) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (108475) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (109485) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (110495) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (111505) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (112515) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (113525) RX_TASK: Read 6 bytes: 'A
+A
+'[0m
+[0;32mI (114535) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (115545) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (116555) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (117565) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (118575) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (119585) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (120595) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (121605) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (122615) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (123625) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (124635) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (125645) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (126655) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (127665) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (128675) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (129685) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (130695) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (131705) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (132715) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (133725) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (134735) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (135745) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (136755) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (137765) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (138775) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (139785) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (140795) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (141805) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (142815) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (143825) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (144835) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (145845) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (146855) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (147865) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (148875) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (149885) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (150895) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (151905) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (152915) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (153925) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (154935) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (155945) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (156955) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (157965) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (158975) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (159985) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (160995) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (162005) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (163015) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (164025) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (165035) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (166045) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (167055) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (168065) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (169075) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (170085) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (171095) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (172105) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (173115) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (174125) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (175135) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (176145) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (177155) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (178165) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (179175) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (180185) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (181195) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (182205) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (183215) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (184225) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (185235) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (186245) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (187255) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (188265) RX_TASK: Read 3 bytes: 'A
+'[0m
+[0;32mI (189275) RX_TASK: Read 3 bytes: 'A
+'[0m

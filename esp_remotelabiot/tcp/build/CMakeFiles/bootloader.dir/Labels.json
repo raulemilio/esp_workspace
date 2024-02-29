@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/rome/esp/esp_workspace/esp_workspace/tcp/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

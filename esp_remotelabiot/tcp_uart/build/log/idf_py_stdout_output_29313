@@ -1,0 +1,1025 @@
+�: DRAM[0m
+[0;32mI (�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Feb  9 2024 11:34:49[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (33) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (90) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=26ac0h (158400) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=00036ae8 vaddr=3fc91600 size=028ech ( 10476) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=000393dc vaddr=40380000 size=06c3ch ( 27708) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=aa6f0h (698096) map[0m
+[0;32mI (249) esp_image: segment 4: paddr=000ea718 vaddr=40386c3c size=0a93ch ( 43324) load[0m
+[0;32mI (263) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (263) boot: Disabling RNG early entropy source...[0m
+[0;32mI (275) cpu_start: Unicore app[0m
+[0;32mI (275) cpu_start: Pro cpu up.[0m
+[0;32mI (284) cpu_start: Pro cpu start user code[0m
+[0;32mI (284) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (284) cpu_start: Application information:[0m
+[0;32mI (287) cpu_start: Project name:     mqtt_tcp[0m
+[0;32mI (292) cpu_start: App version:      d2fb13c-dirty[0m
+[0;32mI (297) cpu_start: Compile time:     Feb 17 2024 10:14:55[0m
+[0;32mI (304) cpu_start: ELF file SHA256:  5b7ea4d34544e418...[0m
+[0;32mI (310) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (314) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (319) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (324) cpu_start: Chip rev:         v0.3[0m
+[0;32mI (329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (336) heap_init: At 3FC98590 len 00044180 (272 KiB): DRAM[0m
+[0;32mI (342) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (349) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (356) spi_flash: detected chip: generic[0m
+[0;32mI (360) spi_flash: flash io: dio[0m
+[0;33mW (364) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (377) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (383) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (391) app_start: Starting scheduler on CPU0[0m
+[0;32mI (396) main_task: Started on CPU0[0m
+[0;32mI (396) main_task: Calling app_main()[0m
+[0;32mI (396) MQTT_EXAMPLE: [APP] Startup..[0m
+[0;32mI (406) MQTT_EXAMPLE: [APP] Free memory: 281576 bytes[0m
+[0;32mI (406) MQTT_EXAMPLE: [APP] IDF version: v5.1.1[0m
+[0;32mI (416) example_connect: Start example_connect.[0m
+[0;32mI (426) pp: pp rom version: 9387209[0m
+[0;32mI (426) net80211: net80211 rom version: 9387209[0m
+I (436) wifi:wifi driver task: 3fca1078, prio:23, stack:6656, core=0
+I (436) wifi:wifi firmware version: ce9244d
+I (436) wifi:wifi certification version: v7.0
+I (446) wifi:config NVS flash: enabled
+I (446) wifi:config nano formating: disabled
+I (446) wifi:Init data frame dynamic rx buffer num: 32
+I (456) wifi:Init management frame dynamic rx buffer num: 32
+I (466) wifi:Init management short buffer num: 32
+I (466) wifi:Init dynamic tx buffer num: 32
+I (466) wifi:Init static tx FG buffer num: 2
+I (476) wifi:Init static rx buffer size: 1600
+I (476) wifi:Init static rx buffer num: 10
+I (486) wifi:Init dynamic rx buffer num: 32
+[0;32mI (486) wifi_init: rx ba win: 6[0m
+[0;32mI (486) wifi_init: tcpip mbox: 32[0m
+[0;32mI (496) wifi_init: udp mbox: 6[0m
+[0;32mI (496) wifi_init: tcp mbox: 6[0m
+[0;32mI (496) wifi_init: tcp tx win: 5744[0m
+[0;32mI (506) wifi_init: tcp rx win: 5744[0m
+[0;32mI (506) wifi_init: tcp mss: 1440[0m
+[0;32mI (516) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (516) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (526) phy_init: phy_version 970,1856f88,May 10 2023,17:44:12[0m
+I (566) wifi:mode : sta (58:cf:79:07:53:84)
+I (566) wifi:enable tsf
+[0;32mI (566) example_connect: Connecting to Fibertel WiFi323 2.4GHz...[0m
+[0;32mI (566) example_connect: Waiting for IP(s)[0m
+I (2976) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (3656) wifi:state: init -> auth (b0)
+I (3656) wifi:state: auth -> assoc (0)
+I (3656) wifi:state: assoc -> run (10)
+I (3676) wifi:<ba-add>idx:0 (ifx:0, 44:ad:b1:28:eb:d1), tid:5, ssn:0, winSize:64
+I (3676) wifi:<ba-add>idx:1 (ifx:0, 44:ad:b1:28:eb:d1), tid:0, ssn:0, winSize:64
+I (3686) wifi:connected with Fibertel WiFi323 2.4GHz, aid = 3, channel 11, BW20, bssid = 44:ad:b1:28:eb:d1
+I (3686) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (3696) wifi:pm start, type: 1
+
+I (3696) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (3776) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4706) esp_netif_handlers: example_netif_sta ip: 192.168.0.101, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (4706) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.101[0m
+[0;32mI (5416) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:5acf:79ff:fe07:5384, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5416) example_common: Connected to example_netif_sta[0m
+[0;32mI (5426) example_common: - IPv4 address: 192.168.0.101,[0m
+[0;32mI (5426) example_common: - IPv6 address: fe80:0000:0000:0000:5acf:79ff:fe07:5384, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5436) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (5446) main_task: Returned from app_main()[0m
+[0;32mI (5826) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5836) MQTT_EXAMPLE: sent subscribe successful, msg_id=16442[0m
+[0;32mI (5836) MQTT_EXAMPLE: sent subscribe successful, msg_id=14073[0m
+[0;32mI (6036) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=16442[0m
+[0;32mI (6416) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=14073[0m
+[0;32mI (6456) RX_TASK: Read 3 bytes: ''[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "msg no esperado"}
+[0;32mI (6456) MQTT_EXAMPLE: sent publish successful, msg_id=5165[0m
+ comm_uart_tx: P,A,0,0,$
+[0;32mI (95126) TX_TASK: Wrote 9 bytes[0m
+ comm_uart_tx: P,A,0,0,$
+[0;32mI (155646) TX_TASK: Wrote 9 bytes[0m
+[0;32mI (166766) RX_TASK: Read 11 bytes: 'P,A,0,0,$
+'[0m
+flag_state set: 1
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Sistema inicializado"}
+[0;32mI (166766) MQTT_EXAMPLE: sent publish successful, msg_id=28219[0m
+ comm_uart_tx: P,R,0,0,$
+[0;32mI (174896) TX_TASK: Wrote 9 bytes[0m
+[0;32mI (176926) RX_TASK: Read 13 bytes: 'P,D,0,519,$
+'[0m
+flag_run A set: 1
+[0;32mI (176926) MQTT_EXAMPLE: sent publish successful, msg_id=26033[0m
+[0;32mI (176926) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (176936) MQTT_EXAMPLE: sent publish successful, msg_id=22829[0m
+[0;32mI (178966) RX_TASK: Read 13 bytes: 'P,D,1,669,$
+'[0m
+flag_run A set: 1
+[0;32mI (178966) MQTT_EXAMPLE: sent publish successful, msg_id=3067[0m
+[0;32mI (178966) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (178976) MQTT_EXAMPLE: sent publish successful, msg_id=44886[0m
+[0;32mI (181006) RX_TASK: Read 13 bytes: 'P,D,2,725,$
+'[0m
+flag_run A set: 1
+[0;32mI (181006) MQTT_EXAMPLE: sent publish successful, msg_id=49904[0m
+[0;32mI (181006) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (181016) MQTT_EXAMPLE: sent publish successful, msg_id=8830[0m
+[0;32mI (183046) RX_TASK: Read 13 bytes: 'P,D,3,754,$
+'[0m
+flag_run A set: 1
+[0;32mI (183046) MQTT_EXAMPLE: sent publish successful, msg_id=19169[0m
+[0;32mI (183046) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (183056) MQTT_EXAMPLE: sent publish successful, msg_id=23984[0m
+[0;32mI (185086) RX_TASK: Read 13 bytes: 'P,D,4,768,$
+'[0m
+flag_run A set: 1
+[0;32mI (185086) MQTT_EXAMPLE: sent publish successful, msg_id=4606[0m
+[0;32mI (185086) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (185096) MQTT_EXAMPLE: sent publish successful, msg_id=39628[0m
+[0;32mI (187126) RX_TASK: Read 13 bytes: 'P,D,5,775,$
+'[0m
+flag_run A set: 1
+[0;32mI (187126) MQTT_EXAMPLE: sent publish successful, msg_id=43952[0m
+[0;32mI (187126) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (187136) MQTT_EXAMPLE: sent publish successful, msg_id=16506[0m
+[0;32mI (189166) RX_TASK: Read 13 bytes: 'P,D,6,779,$
+'[0m
+flag_run A set: 1
+[0;32mI (189166) MQTT_EXAMPLE: sent publish successful, msg_id=15185[0m
+[0;32mI (189166) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (189176) MQTT_EXAMPLE: sent publish successful, msg_id=55043[0m
+[0;32mI (191206) RX_TASK: Read 13 bytes: 'P,D,7,784,$
+'[0m
+flag_run A set: 1
+[0;32mI (191206) MQTT_EXAMPLE: sent publish successful, msg_id=61057[0m
+[0;32mI (191206) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (191216) MQTT_EXAMPLE: sent publish successful, msg_id=57565[0m
+[0;32mI (193246) RX_TASK: Read 13 bytes: 'P,D,8,786,$
+'[0m
+flag_run A set: 1
+[0;32mI (193246) MQTT_EXAMPLE: sent publish successful, msg_id=10541[0m
+[0;32mI (193246) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (193256) MQTT_EXAMPLE: sent publish successful, msg_id=59514[0m
+[0;32mI (195286) RX_TASK: Read 13 bytes: 'P,D,9,787,$
+'[0m
+flag_run A set: 1
+[0;32mI (195286) MQTT_EXAMPLE: sent publish successful, msg_id=58846[0m
+[0;32mI (195286) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (195296) MQTT_EXAMPLE: sent publish successful, msg_id=3027[0m
+[0;32mI (197326) RX_TASK: Read 14 bytes: 'P,D,10,788,$
+'[0m
+flag_run A set: 1
+[0;32mI (197326) MQTT_EXAMPLE: sent publish successful, msg_id=49323[0m
+[0;32mI (197326) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (197336) MQTT_EXAMPLE: sent publish successful, msg_id=40680[0m
+[0;32mI (199366) RX_TASK: Read 14 bytes: 'P,D,11,789,$
+'[0m
+flag_run A set: 1
+[0;32mI (199366) MQTT_EXAMPLE: sent publish successful, msg_id=34169[0m
+[0;32mI (199366) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (199376) MQTT_EXAMPLE: sent publish successful, msg_id=3783[0m
+[0;32mI (201406) RX_TASK: Read 14 bytes: 'P,D,12,790,$
+'[0m
+flag_run A set: 1
+[0;32mI (201406) MQTT_EXAMPLE: sent publish successful, msg_id=64489[0m
+[0;32mI (201406) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (201416) MQTT_EXAMPLE: sent publish successful, msg_id=58134[0m
+[0;32mI (203446) RX_TASK: Read 14 bytes: 'P,D,13,791,$
+'[0m
+flag_run A set: 1
+[0;32mI (203446) MQTT_EXAMPLE: sent publish successful, msg_id=40931[0m
+[0;32mI (203446) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (203456) MQTT_EXAMPLE: sent publish successful, msg_id=60345[0m
+[0;32mI (205486) RX_TASK: Read 14 bytes: 'P,D,14,790,$
+'[0m
+flag_run A set: 1
+[0;32mI (205486) MQTT_EXAMPLE: sent publish successful, msg_id=18663[0m
+[0;32mI (205486) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (205496) MQTT_EXAMPLE: sent publish successful, msg_id=44114[0m
+[0;32mI (207526) RX_TASK: Read 14 bytes: 'P,D,15,787,$
+'[0m
+flag_run A set: 1
+[0;32mI (207526) MQTT_EXAMPLE: sent publish successful, msg_id=23946[0m
+[0;32mI (207526) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (207536) MQTT_EXAMPLE: sent publish successful, msg_id=53812[0m
+[0;32mI (209566) RX_TASK: Read 14 bytes: 'P,D,16,777,$
+'[0m
+flag_run A set: 1
+[0;32mI (209566) MQTT_EXAMPLE: sent publish successful, msg_id=29061[0m
+[0;32mI (209566) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (209576) MQTT_EXAMPLE: sent publish successful, msg_id=22154[0m
+[0;32mI (211606) RX_TASK: Read 14 bytes: 'P,D,17,770,$
+'[0m
+flag_run A set: 1
+[0;32mI (211606) MQTT_EXAMPLE: sent publish successful, msg_id=37587[0m
+[0;32mI (211606) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (211616) MQTT_EXAMPLE: sent publish successful, msg_id=8465[0m
+[0;32mI (213646) RX_TASK: Read 14 bytes: 'P,D,18,763,$
+'[0m
+flag_run A set: 1
+[0;32mI (213646) MQTT_EXAMPLE: sent publish successful, msg_id=7310[0m
+[0;32mI (213646) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (213656) MQTT_EXAMPLE: sent publish successful, msg_id=47645[0m
+[0;32mI (215686) RX_TASK: Read 14 bytes: 'P,D,19,767,$
+'[0m
+flag_run A set: 1
+[0;32mI (215686) MQTT_EXAMPLE: sent publish successful, msg_id=28944[0m
+[0;32mI (215686) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (215696) MQTT_EXAMPLE: sent publish successful, msg_id=45208[0m
+[0;32mI (217726) RX_TASK: Read 14 bytes: 'P,D,20,761,$
+'[0m
+flag_run A set: 1
+[0;32mI (217726) MQTT_EXAMPLE: sent publish successful, msg_id=33732[0m
+[0;32mI (217726) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (217736) MQTT_EXAMPLE: sent publish successful, msg_id=12410[0m
+[0;32mI (219766) RX_TASK: Read 14 bytes: 'P,D,21,758,$
+'[0m
+flag_run A set: 1
+[0;32mI (219766) MQTT_EXAMPLE: sent publish successful, msg_id=7489[0m
+[0;32mI (219766) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (219776) MQTT_EXAMPLE: sent publish successful, msg_id=6635[0m
+[0;32mI (221806) RX_TASK: Read 14 bytes: 'P,D,22,748,$
+'[0m
+flag_run A set: 1
+[0;32mI (221806) MQTT_EXAMPLE: sent publish successful, msg_id=61279[0m
+[0;32mI (221806) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (221816) MQTT_EXAMPLE: sent publish successful, msg_id=41398[0m
+[0;32mI (223846) RX_TASK: Read 14 bytes: 'P,D,23,747,$
+'[0m
+flag_run A set: 1
+[0;32mI (223846) MQTT_EXAMPLE: sent publish successful, msg_id=47013[0m
+[0;32mI (223846) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (223856) MQTT_EXAMPLE: sent publish successful, msg_id=39808[0m
+[0;32mI (225886) RX_TASK: Read 14 bytes: 'P,D,24,743,$
+'[0m
+flag_run A set: 1
+[0;32mI (225886) MQTT_EXAMPLE: sent publish successful, msg_id=20529[0m
+[0;32mI (225886) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (225896) MQTT_EXAMPLE: sent publish successful, msg_id=1250[0m
+[0;32mI (227926) RX_TASK: Read 14 bytes: 'P,D,25,743,$
+'[0m
+flag_run A set: 1
+[0;32mI (227926) MQTT_EXAMPLE: sent publish successful, msg_id=46728[0m
+[0;32mI (227926) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (227936) MQTT_EXAMPLE: sent publish successful, msg_id=36583[0m
+[0;32mI (229966) RX_TASK: Read 14 bytes: 'P,D,26,743,$
+'[0m
+flag_run A set: 1
+[0;32mI (229966) MQTT_EXAMPLE: sent publish successful, msg_id=4715[0m
+[0;32mI (229966) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (229976) MQTT_EXAMPLE: sent publish successful, msg_id=24824[0m
+[0;32mI (232006) RX_TASK: Read 14 bytes: 'P,D,27,744,$
+'[0m
+flag_run A set: 1
+[0;32mI (232006) MQTT_EXAMPLE: sent publish successful, msg_id=17954[0m
+[0;32mI (232006) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (232016) MQTT_EXAMPLE: sent publish successful, msg_id=50367[0m
+[0;32mI (234046) RX_TASK: Read 14 bytes: 'P,D,28,750,$
+'[0m
+flag_run A set: 1
+[0;32mI (234046) MQTT_EXAMPLE: sent publish successful, msg_id=44630[0m
+[0;32mI (234046) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (234056) MQTT_EXAMPLE: sent publish successful, msg_id=13874[0m
+[0;32mI (236086) RX_TASK: Read 14 bytes: 'P,D,29,752,$
+'[0m
+flag_run A set: 1
+[0;32mI (236086) MQTT_EXAMPLE: sent publish successful, msg_id=49538[0m
+[0;32mI (236086) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (236096) MQTT_EXAMPLE: sent publish successful, msg_id=64961[0m
+[0;32mI (238126) RX_TASK: Read 14 bytes: 'P,D,30,750,$
+'[0m
+flag_run A set: 1
+[0;32mI (238126) MQTT_EXAMPLE: sent publish successful, msg_id=45923[0m
+[0;32mI (238126) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (238136) MQTT_EXAMPLE: sent publish successful, msg_id=25945[0m
+[0;32mI (240166) RX_TASK: Read 14 bytes: 'P,D,31,753,$
+'[0m
+flag_run A set: 1
+[0;32mI (240166) MQTT_EXAMPLE: sent publish successful, msg_id=8685[0m
+[0;32mI (240166) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (240176) MQTT_EXAMPLE: sent publish successful, msg_id=55421[0m
+[0;32mI (242206) RX_TASK: Read 14 bytes: 'P,D,32,766,$
+'[0m
+flag_run A set: 1
+[0;32mI (242206) MQTT_EXAMPLE: sent publish successful, msg_id=48608[0m
+[0;32mI (242206) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (242216) MQTT_EXAMPLE: sent publish successful, msg_id=53336[0m
+[0;32mI (244246) RX_TASK: Read 14 bytes: 'P,D,33,772,$
+'[0m
+flag_run A set: 1
+[0;32mI (244246) MQTT_EXAMPLE: sent publish successful, msg_id=31147[0m
+[0;32mI (244246) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (244256) MQTT_EXAMPLE: sent publish successful, msg_id=38953[0m
+[0;32mI (246286) RX_TASK: Read 14 bytes: 'P,D,34,786,$
+'[0m
+flag_run A set: 1
+[0;32mI (246286) MQTT_EXAMPLE: sent publish successful, msg_id=41156[0m
+[0;32mI (246286) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (246296) MQTT_EXAMPLE: sent publish successful, msg_id=41603[0m
+[0;32mI (248326) RX_TASK: Read 14 bytes: 'P,D,35,789,$
+'[0m
+flag_run A set: 1
+[0;32mI (248326) MQTT_EXAMPLE: sent publish successful, msg_id=36537[0m
+[0;32mI (248326) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (248336) MQTT_EXAMPLE: sent publish successful, msg_id=61565[0m
+[0;32mI (250366) RX_TASK: Read 14 bytes: 'P,D,36,783,$
+'[0m
+flag_run A set: 1
+[0;32mI (250366) MQTT_EXAMPLE: sent publish successful, msg_id=13512[0m
+[0;32mI (250366) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (250376) MQTT_EXAMPLE: sent publish successful, msg_id=11201[0m
+[0;32mI (252406) RX_TASK: Read 14 bytes: 'P,D,37,783,$
+'[0m
+flag_run A set: 1
+[0;32mI (252406) MQTT_EXAMPLE: sent publish successful, msg_id=56809[0m
+[0;32mI (252406) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (252416) MQTT_EXAMPLE: sent publish successful, msg_id=10301[0m
+[0;32mI (254446) RX_TASK: Read 14 bytes: 'P,D,38,781,$
+'[0m
+flag_run A set: 1
+[0;32mI (254446) MQTT_EXAMPLE: sent publish successful, msg_id=7401[0m
+[0;32mI (254446) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (254456) MQTT_EXAMPLE: sent publish successful, msg_id=26577[0m
+[0;32mI (256486) RX_TASK: Read 14 bytes: 'P,D,39,786,$
+'[0m
+flag_run A set: 1
+[0;32mI (256486) MQTT_EXAMPLE: sent publish successful, msg_id=13401[0m
+[0;32mI (256486) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (256496) MQTT_EXAMPLE: sent publish successful, msg_id=26554[0m
+[0;32mI (258526) RX_TASK: Read 14 bytes: 'P,D,40,791,$
+'[0m
+flag_run A set: 1
+[0;32mI (258526) MQTT_EXAMPLE: sent publish successful, msg_id=24076[0m
+[0;32mI (258526) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (258536) MQTT_EXAMPLE: sent publish successful, msg_id=47103[0m
+[0;32mI (260566) RX_TASK: Read 14 bytes: 'P,D,41,791,$
+'[0m
+flag_run A set: 1
+[0;32mI (260566) MQTT_EXAMPLE: sent publish successful, msg_id=61453[0m
+[0;32mI (260566) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (260576) MQTT_EXAMPLE: sent publish successful, msg_id=52692[0m
+[0;32mI (262606) RX_TASK: Read 14 bytes: 'P,D,42,784,$
+'[0m
+flag_run A set: 1
+[0;32mI (262606) MQTT_EXAMPLE: sent publish successful, msg_id=45319[0m
+[0;32mI (262606) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (262616) MQTT_EXAMPLE: sent publish successful, msg_id=1662[0m
+[0;32mI (264646) RX_TASK: Read 14 bytes: 'P,D,43,787,$
+'[0m
+flag_run A set: 1
+[0;32mI (264646) MQTT_EXAMPLE: sent publish successful, msg_id=26455[0m
+[0;32mI (264646) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (264656) MQTT_EXAMPLE: sent publish successful, msg_id=16054[0m
+[0;32mI (266686) RX_TASK: Read 14 bytes: 'P,D,44,791,$
+'[0m
+flag_run A set: 1
+[0;32mI (266686) MQTT_EXAMPLE: sent publish successful, msg_id=13463[0m
+[0;32mI (266686) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (266696) MQTT_EXAMPLE: sent publish successful, msg_id=30642[0m
+[0;32mI (268726) RX_TASK: Read 14 bytes: 'P,D,45,803,$
+'[0m
+flag_run A set: 1
+[0;32mI (268726) MQTT_EXAMPLE: sent publish successful, msg_id=60800[0m
+[0;32mI (268726) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (268736) MQTT_EXAMPLE: sent publish successful, msg_id=4693[0m
+[0;32mI (270766) RX_TASK: Read 14 bytes: 'P,D,46,802,$
+'[0m
+flag_run A set: 1
+[0;32mI (270766) MQTT_EXAMPLE: sent publish successful, msg_id=43226[0m
+[0;32mI (270766) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (270776) MQTT_EXAMPLE: sent publish successful, msg_id=62849[0m
+[0;32mI (272806) RX_TASK: Read 14 bytes: 'P,D,47,800,$
+'[0m
+flag_run A set: 1
+[0;32mI (272806) MQTT_EXAMPLE: sent publish successful, msg_id=57963[0m
+[0;32mI (272806) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (272816) MQTT_EXAMPLE: sent publish successful, msg_id=35260[0m
+[0;32mI (274846) RX_TASK: Read 14 bytes: 'P,D,48,800,$
+'[0m
+flag_run A set: 1
+[0;32mI (274846) MQTT_EXAMPLE: sent publish successful, msg_id=18702[0m
+[0;32mI (274846) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (274856) MQTT_EXAMPLE: sent publish successful, msg_id=27876[0m
+[0;32mI (276886) RX_TASK: Read 14 bytes: 'P,D,49,797,$
+'[0m
+flag_run A set: 1
+[0;32mI (276886) MQTT_EXAMPLE: sent publish successful, msg_id=33132[0m
+[0;32mI (276886) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (276896) MQTT_EXAMPLE: sent publish successful, msg_id=46184[0m
+[0;32mI (278926) RX_TASK: Read 14 bytes: 'P,D,50,792,$
+'[0m
+flag_run A set: 1
+[0;32mI (278926) MQTT_EXAMPLE: sent publish successful, msg_id=25343[0m
+[0;32mI (278926) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (278936) MQTT_EXAMPLE: sent publish successful, msg_id=62777[0m
+[0;32mI (280966) RX_TASK: Read 14 bytes: 'P,D,51,768,$
+'[0m
+flag_run A set: 1
+[0;32mI (280966) MQTT_EXAMPLE: sent publish successful, msg_id=22751[0m
+[0;32mI (280966) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (280976) MQTT_EXAMPLE: sent publish successful, msg_id=46173[0m
+[0;32mI (283006) RX_TASK: Read 14 bytes: 'P,D,52,761,$
+'[0m
+flag_run A set: 1
+[0;32mI (283006) MQTT_EXAMPLE: sent publish successful, msg_id=53375[0m
+[0;32mI (283006) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (283016) MQTT_EXAMPLE: sent publish successful, msg_id=41685[0m
+[0;32mI (285046) RX_TASK: Read 14 bytes: 'P,D,53,757,$
+'[0m
+flag_run A set: 1
+[0;32mI (285046) MQTT_EXAMPLE: sent publish successful, msg_id=46271[0m
+[0;32mI (285046) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (285056) MQTT_EXAMPLE: sent publish successful, msg_id=11271[0m
+[0;32mI (287086) RX_TASK: Read 14 bytes: 'P,D,54,759,$
+'[0m
+flag_run A set: 1
+[0;32mI (287086) MQTT_EXAMPLE: sent publish successful, msg_id=41923[0m
+[0;32mI (287086) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (287096) MQTT_EXAMPLE: sent publish successful, msg_id=39113[0m
+[0;32mI (289126) RX_TASK: Read 14 bytes: 'P,D,55,756,$
+'[0m
+flag_run A set: 1
+[0;32mI (289126) MQTT_EXAMPLE: sent publish successful, msg_id=34031[0m
+[0;32mI (289126) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (289136) MQTT_EXAMPLE: sent publish successful, msg_id=6436[0m
+[0;32mI (291166) RX_TASK: Read 14 bytes: 'P,D,56,755,$
+'[0m
+flag_run A set: 1
+[0;32mI (291166) MQTT_EXAMPLE: sent publish successful, msg_id=45951[0m
+[0;32mI (291166) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (291176) MQTT_EXAMPLE: sent publish successful, msg_id=23115[0m
+[0;32mI (293206) RX_TASK: Read 14 bytes: 'P,D,57,758,$
+'[0m
+flag_run A set: 1
+[0;32mI (293206) MQTT_EXAMPLE: sent publish successful, msg_id=7759[0m
+[0;32mI (293206) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (293216) MQTT_EXAMPLE: sent publish successful, msg_id=53675[0m
+[0;32mI (295246) RX_TASK: Read 14 bytes: 'P,D,58,758,$
+'[0m
+flag_run A set: 1
+[0;32mI (295246) MQTT_EXAMPLE: sent publish successful, msg_id=59737[0m
+[0;32mI (295246) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (295256) MQTT_EXAMPLE: sent publish successful, msg_id=2138[0m
+[0;32mI (297286) RX_TASK: Read 14 bytes: 'P,D,59,756,$
+'[0m
+flag_run A set: 1
+[0;32mI (297286) MQTT_EXAMPLE: sent publish successful, msg_id=6457[0m
+[0;32mI (297286) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (297296) MQTT_EXAMPLE: sent publish successful, msg_id=29516[0m
+[0;32mI (299326) RX_TASK: Read 14 bytes: 'P,D,60,757,$
+'[0m
+flag_run A set: 1
+[0;32mI (299326) MQTT_EXAMPLE: sent publish successful, msg_id=44227[0m
+[0;32mI (299326) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (299336) MQTT_EXAMPLE: sent publish successful, msg_id=43891[0m
+[0;32mI (301366) RX_TASK: Read 14 bytes: 'P,D,61,758,$
+'[0m
+flag_run A set: 1
+[0;32mI (301366) MQTT_EXAMPLE: sent publish successful, msg_id=45038[0m
+[0;32mI (301366) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (301376) MQTT_EXAMPLE: sent publish successful, msg_id=19441[0m
+[0;32mI (303406) RX_TASK: Read 14 bytes: 'P,D,62,764,$
+'[0m
+flag_run A set: 1
+[0;32mI (303406) MQTT_EXAMPLE: sent publish successful, msg_id=37756[0m
+[0;32mI (303406) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (303416) MQTT_EXAMPLE: sent publish successful, msg_id=27278[0m
+[0;32mI (305446) RX_TASK: Read 14 bytes: 'P,D,63,774,$
+'[0m
+flag_run A set: 1
+[0;32mI (305446) MQTT_EXAMPLE: sent publish successful, msg_id=50555[0m
+[0;32mI (305446) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (305456) MQTT_EXAMPLE: sent publish successful, msg_id=9756[0m
+[0;32mI (307486) RX_TASK: Read 14 bytes: 'P,D,64,778,$
+'[0m
+flag_run A set: 1
+[0;32mI (307486) MQTT_EXAMPLE: sent publish successful, msg_id=23871[0m
+[0;32mI (307486) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (307496) MQTT_EXAMPLE: sent publish successful, msg_id=19954[0m
+[0;32mI (309526) RX_TASK: Read 14 bytes: 'P,D,65,773,$
+'[0m
+flag_run A set: 1
+[0;32mI (309526) MQTT_EXAMPLE: sent publish successful, msg_id=46148[0m
+[0;32mI (309526) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (309536) MQTT_EXAMPLE: sent publish successful, msg_id=2315[0m
+[0;32mI (311566) RX_TASK: Read 14 bytes: 'P,D,66,777,$
+'[0m
+flag_run A set: 1
+[0;32mI (311566) MQTT_EXAMPLE: sent publish successful, msg_id=7944[0m
+[0;32mI (311566) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (311576) MQTT_EXAMPLE: sent publish successful, msg_id=41508[0m
+[0;32mI (313606) RX_TASK: Read 14 bytes: 'P,D,67,791,$
+'[0m
+flag_run A set: 1
+[0;32mI (313606) MQTT_EXAMPLE: sent publish successful, msg_id=57285[0m
+[0;32mI (313606) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (313616) MQTT_EXAMPLE: sent publish successful, msg_id=51559[0m
+[0;32mI (315646) RX_TASK: Read 14 bytes: 'P,D,68,797,$
+'[0m
+flag_run A set: 1
+[0;32mI (315646) MQTT_EXAMPLE: sent publish successful, msg_id=38892[0m
+[0;32mI (315646) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (315656) MQTT_EXAMPLE: sent publish successful, msg_id=38621[0m
+[0;32mI (317686) RX_TASK: Read 14 bytes: 'P,D,69,810,$
+'[0m
+flag_run A set: 1
+[0;32mI (317686) MQTT_EXAMPLE: sent publish successful, msg_id=63450[0m
+[0;32mI (317686) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (317696) MQTT_EXAMPLE: sent publish successful, msg_id=29953[0m
+[0;32mI (319726) RX_TASK: Read 14 bytes: 'P,D,70,809,$
+'[0m
+flag_run A set: 1
+[0;32mI (319726) MQTT_EXAMPLE: sent publish successful, msg_id=61516[0m
+[0;32mI (319726) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (319736) MQTT_EXAMPLE: sent publish successful, msg_id=15742[0m
+[0;32mI (321766) RX_TASK: Read 14 bytes: 'P,D,71,809,$
+'[0m
+flag_run A set: 1
+[0;32mI (321766) MQTT_EXAMPLE: sent publish successful, msg_id=22270[0m
+[0;32mI (321766) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (321776) MQTT_EXAMPLE: sent publish successful, msg_id=40201[0m
+[0;32mI (323806) RX_TASK: Read 14 bytes: 'P,D,72,807,$
+'[0m
+flag_run A set: 1
+[0;32mI (323806) MQTT_EXAMPLE: sent publish successful, msg_id=62629[0m
+[0;32mI (323806) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (323816) MQTT_EXAMPLE: sent publish successful, msg_id=22643[0m
+[0;32mI (325846) RX_TASK: Read 14 bytes: 'P,D,73,795,$
+'[0m
+flag_run A set: 1
+[0;32mI (325846) MQTT_EXAMPLE: sent publish successful, msg_id=9792[0m
+[0;32mI (325846) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (325856) MQTT_EXAMPLE: sent publish successful, msg_id=64974[0m
+[0;32mI (327886) RX_TASK: Read 14 bytes: 'P,D,74,784,$
+'[0m
+flag_run A set: 1
+[0;32mI (327886) MQTT_EXAMPLE: sent publish successful, msg_id=6014[0m
+[0;32mI (327886) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (327896) MQTT_EXAMPLE: sent publish successful, msg_id=47606[0m
+[0;32mI (329926) RX_TASK: Read 14 bytes: 'P,D,75,782,$
+'[0m
+flag_run A set: 1
+[0;32mI (329926) MQTT_EXAMPLE: sent publish successful, msg_id=23527[0m
+[0;32mI (329926) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (329936) MQTT_EXAMPLE: sent publish successful, msg_id=64271[0m
+[0;32mI (331966) RX_TASK: Read 14 bytes: 'P,D,76,783,$
+'[0m
+flag_run A set: 1
+[0;32mI (331966) MQTT_EXAMPLE: sent publish successful, msg_id=27228[0m
+[0;32mI (331966) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (331976) MQTT_EXAMPLE: sent publish successful, msg_id=2103[0m
+[0;32mI (334006) RX_TASK: Read 14 bytes: 'P,D,77,784,$
+'[0m
+flag_run A set: 1
+[0;32mI (334006) MQTT_EXAMPLE: sent publish successful, msg_id=53092[0m
+[0;32mI (334006) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (334016) MQTT_EXAMPLE: sent publish successful, msg_id=4874[0m
+[0;32mI (336046) RX_TASK: Read 14 bytes: 'P,D,78,786,$
+'[0m
+flag_run A set: 1
+[0;32mI (336046) MQTT_EXAMPLE: sent publish successful, msg_id=9096[0m
+[0;32mI (336046) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (336056) MQTT_EXAMPLE: sent publish successful, msg_id=28252[0m
+[0;32mI (338086) RX_TASK: Read 14 bytes: 'P,D,79,791,$
+'[0m
+flag_run A set: 1
+[0;32mI (338086) MQTT_EXAMPLE: sent publish successful, msg_id=50106[0m
+[0;32mI (338086) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (338096) MQTT_EXAMPLE: sent publish successful, msg_id=49852[0m
+[0;32mI (340126) RX_TASK: Read 14 bytes: 'P,D,80,791,$
+'[0m
+flag_run A set: 1
+[0;32mI (340126) MQTT_EXAMPLE: sent publish successful, msg_id=57866[0m
+[0;32mI (340126) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (340136) MQTT_EXAMPLE: sent publish successful, msg_id=52799[0m
+[0;32mI (342166) RX_TASK: Read 14 bytes: 'P,D,81,798,$
+'[0m
+flag_run A set: 1
+[0;32mI (342166) MQTT_EXAMPLE: sent publish successful, msg_id=21866[0m
+[0;32mI (342166) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (342176) MQTT_EXAMPLE: sent publish successful, msg_id=52454[0m
+[0;32mI (344206) RX_TASK: Read 14 bytes: 'P,D,82,796,$
+'[0m
+flag_run A set: 1
+[0;32mI (344206) MQTT_EXAMPLE: sent publish successful, msg_id=44452[0m
+[0;32mI (344206) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (344216) MQTT_EXAMPLE: sent publish successful, msg_id=62829[0m
+[0;32mI (346246) RX_TASK: Read 14 bytes: 'P,D,83,805,$
+'[0m
+flag_run A set: 1
+[0;32mI (346246) MQTT_EXAMPLE: sent publish successful, msg_id=46164[0m
+[0;32mI (346246) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (346256) MQTT_EXAMPLE: sent publish successful, msg_id=6559[0m
+[0;32mI (348286) RX_TASK: Read 14 bytes: 'P,D,84,807,$
+'[0m
+flag_run A set: 1
+[0;32mI (348286) MQTT_EXAMPLE: sent publish successful, msg_id=2610[0m
+[0;32mI (348286) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (348296) MQTT_EXAMPLE: sent publish successful, msg_id=29606[0m
+[0;32mI (350326) RX_TASK: Read 14 bytes: 'P,D,85,808,$
+'[0m
+flag_run A set: 1
+[0;32mI (350326) MQTT_EXAMPLE: sent publish successful, msg_id=49165[0m
+[0;32mI (350326) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (350336) MQTT_EXAMPLE: sent publish successful, msg_id=25306[0m
+[0;32mI (352366) RX_TASK: Read 14 bytes: 'P,D,86,802,$
+'[0m
+flag_run A set: 1
+[0;32mI (352366) MQTT_EXAMPLE: sent publish successful, msg_id=45819[0m
+[0;32mI (352366) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (352376) MQTT_EXAMPLE: sent publish successful, msg_id=3427[0m
+[0;32mI (354406) RX_TASK: Read 14 bytes: 'P,D,87,790,$
+'[0m
+flag_run A set: 1
+[0;32mI (354406) MQTT_EXAMPLE: sent publish successful, msg_id=48460[0m
+[0;32mI (354406) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (354416) MQTT_EXAMPLE: sent publish successful, msg_id=23254[0m
+[0;32mI (356446) RX_TASK: Read 14 bytes: 'P,D,88,788,$
+'[0m
+flag_run A set: 1
+[0;32mI (356446) MQTT_EXAMPLE: sent publish successful, msg_id=54952[0m
+[0;32mI (356446) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (356456) MQTT_EXAMPLE: sent publish successful, msg_id=17805[0m
+[0;32mI (358486) RX_TASK: Read 14 bytes: 'P,D,89,774,$
+'[0m
+flag_run A set: 1
+[0;32mI (358486) MQTT_EXAMPLE: sent publish successful, msg_id=10429[0m
+[0;32mI (358486) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (358496) MQTT_EXAMPLE: sent publish successful, msg_id=33[0m
+[0;32mI (360526) RX_TASK: Read 14 bytes: 'P,D,90,764,$
+'[0m
+flag_run A set: 1
+[0;32mI (360526) MQTT_EXAMPLE: sent publish successful, msg_id=15357[0m
+[0;32mI (360526) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (360536) MQTT_EXAMPLE: sent publish successful, msg_id=51444[0m
+[0;32mI (362566) RX_TASK: Read 14 bytes: 'P,D,91,762,$
+'[0m
+flag_run A set: 1
+[0;32mI (362566) MQTT_EXAMPLE: sent publish successful, msg_id=20530[0m
+[0;32mI (362566) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (362576) MQTT_EXAMPLE: sent publish successful, msg_id=24961[0m
+[0;32mI (364606) RX_TASK: Read 14 bytes: 'P,D,92,772,$
+'[0m
+flag_run A set: 1
+[0;32mI (364606) MQTT_EXAMPLE: sent publish successful, msg_id=55076[0m
+[0;32mI (364606) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (364616) MQTT_EXAMPLE: sent publish successful, msg_id=31652[0m
+[0;32mI (366646) RX_TASK: Read 14 bytes: 'P,D,93,780,$
+'[0m
+flag_run A set: 1
+[0;32mI (366646) MQTT_EXAMPLE: sent publish successful, msg_id=13326[0m
+[0;32mI (366646) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (366656) MQTT_EXAMPLE: sent publish successful, msg_id=30931[0m
+[0;32mI (368686) RX_TASK: Read 14 bytes: 'P,D,94,777,$
+'[0m
+flag_run A set: 1
+[0;32mI (368686) MQTT_EXAMPLE: sent publish successful, msg_id=27617[0m
+[0;32mI (368686) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (368696) MQTT_EXAMPLE: sent publish successful, msg_id=30892[0m
+[0;32mI (370726) RX_TASK: Read 14 bytes: 'P,D,95,782,$
+'[0m
+flag_run A set: 1
+[0;32mI (370726) MQTT_EXAMPLE: sent publish successful, msg_id=43423[0m
+[0;32mI (370726) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (370736) MQTT_EXAMPLE: sent publish successful, msg_id=57915[0m
+[0;32mI (372766) RX_TASK: Read 14 bytes: 'P,D,96,798,$
+'[0m
+flag_run A set: 1
+[0;32mI (372766) MQTT_EXAMPLE: sent publish successful, msg_id=2324[0m
+[0;32mI (372766) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (372776) MQTT_EXAMPLE: sent publish successful, msg_id=18489[0m
+[0;32mI (374806) RX_TASK: Read 14 bytes: 'P,D,97,809,$
+'[0m
+flag_run A set: 1
+[0;32mI (374806) MQTT_EXAMPLE: sent publish successful, msg_id=18927[0m
+[0;32mI (374806) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (374816) MQTT_EXAMPLE: sent publish successful, msg_id=18896[0m
+[0;32mI (376846) RX_TASK: Read 14 bytes: 'P,D,98,814,$
+'[0m
+flag_run A set: 1
+[0;32mI (376846) MQTT_EXAMPLE: sent publish successful, msg_id=28638[0m
+[0;32mI (376846) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (376856) MQTT_EXAMPLE: sent publish successful, msg_id=37410[0m
+[0;32mI (378886) RX_TASK: Read 14 bytes: 'P,D,99,815,$
+'[0m
+flag_run A set: 1
+[0;32mI (378886) MQTT_EXAMPLE: sent publish successful, msg_id=57260[0m
+[0;32mI (378886) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (378896) MQTT_EXAMPLE: sent publish successful, msg_id=30341[0m
+[0;32mI (380926) RX_TASK: Read 15 bytes: 'P,D,100,815,$
+'[0m
+flag_run A set: 1
+[0;32mI (380926) MQTT_EXAMPLE: sent publish successful, msg_id=6869[0m
+[0;32mI (380926) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (380936) MQTT_EXAMPLE: sent publish successful, msg_id=59038[0m
+[0;32mI (382966) RX_TASK: Read 15 bytes: 'P,D,101,814,$
+'[0m
+flag_run A set: 1
+[0;32mI (382966) MQTT_EXAMPLE: sent publish successful, msg_id=38952[0m
+[0;32mI (382966) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (382976) MQTT_EXAMPLE: sent publish successful, msg_id=11916[0m
+[0;32mI (385006) RX_TASK: Read 15 bytes: 'P,D,102,811,$
+'[0m
+flag_run A set: 1
+[0;32mI (385006) MQTT_EXAMPLE: sent publish successful, msg_id=43982[0m
+[0;32mI (385006) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (385016) MQTT_EXAMPLE: sent publish successful, msg_id=53229[0m
+[0;32mI (387046) RX_TASK: Read 15 bytes: 'P,D,103,800,$
+'[0m
+flag_run A set: 1
+[0;32mI (387046) MQTT_EXAMPLE: sent publish successful, msg_id=48425[0m
+[0;32mI (387046) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (387056) MQTT_EXAMPLE: sent publish successful, msg_id=60230[0m
+[0;32mI (389086) RX_TASK: Read 15 bytes: 'P,D,104,793,$
+'[0m
+flag_run A set: 1
+[0;32mI (389086) MQTT_EXAMPLE: sent publish successful, msg_id=28240[0m
+[0;32mI (389086) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (389096) MQTT_EXAMPLE: sent publish successful, msg_id=59847[0m
+[0;32mI (391126) RX_TASK: Read 15 bytes: 'P,D,105,776,$
+'[0m
+flag_run A set: 1
+[0;32mI (391126) MQTT_EXAMPLE: sent publish successful, msg_id=21813[0m
+[0;32mI (391126) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (391136) MQTT_EXAMPLE: sent publish successful, msg_id=34041[0m
+[0;32mI (393166) RX_TASK: Read 15 bytes: 'P,D,106,775,$
+'[0m
+flag_run A set: 1
+[0;32mI (393166) MQTT_EXAMPLE: sent publish successful, msg_id=5882[0m
+[0;32mI (393166) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (393176) MQTT_EXAMPLE: sent publish successful, msg_id=15388[0m
+[0;32mI (395206) RX_TASK: Read 15 bytes: 'P,D,107,769,$
+'[0m
+flag_run A set: 1
+[0;32mI (395206) MQTT_EXAMPLE: sent publish successful, msg_id=34775[0m
+[0;32mI (395206) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (395216) MQTT_EXAMPLE: sent publish successful, msg_id=51150[0m
+[0;32mI (397246) RX_TASK: Read 15 bytes: 'P,D,108,764,$
+'[0m
+flag_run A set: 1
+[0;32mI (397246) MQTT_EXAMPLE: sent publish successful, msg_id=21976[0m
+[0;32mI (397246) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (397256) MQTT_EXAMPLE: sent publish successful, msg_id=63556[0m
+[0;32mI (399286) RX_TASK: Read 15 bytes: 'P,D,109,765,$
+'[0m
+flag_run A set: 1
+[0;32mI (399286) MQTT_EXAMPLE: sent publish successful, msg_id=39833[0m
+[0;32mI (399286) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (399296) MQTT_EXAMPLE: sent publish successful, msg_id=33670[0m
+[0;32mI (401326) RX_TASK: Read 15 bytes: 'P,D,110,764,$
+'[0m
+flag_run A set: 1
+[0;32mI (401326) MQTT_EXAMPLE: sent publish successful, msg_id=42832[0m
+[0;32mI (401326) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (401336) MQTT_EXAMPLE: sent publish successful, msg_id=335[0m
+[0;32mI (403366) RX_TASK: Read 15 bytes: 'P,D,111,771,$
+'[0m
+flag_run A set: 1
+[0;32mI (403366) MQTT_EXAMPLE: sent publish successful, msg_id=20085[0m
+[0;32mI (403366) TX_TASK: Wrote 9 bytes[0m
+flag_log: 1 | flag_rx_receive: 0 
+log: { "dev_id": 4, "state": "Exp. A en medición..."}
+[0;32mI (403376) MQTT_EXAMPLE: sent publish successful, msg_id=14427[0m

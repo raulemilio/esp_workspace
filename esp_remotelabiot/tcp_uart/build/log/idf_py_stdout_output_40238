@@ -1,0 +1,97 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/bootloader/esp-idf/esptool_py && /home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/rome/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/bootloader/bootloader.bin
+Bootloader binary size 0x5030 bytes. 0x2fd0 bytes (37%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c: In function 'rx_task':
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:321:13: warning: variable 'flag_runB' set but not used [-Wunused-but-set-variable]
+  321 |         int flag_runB = 0; // 0 experimento A sin iniciar | habilitado para solicitar datos
+      |             ^~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:320:13: warning: variable 'flag_runA' set but not used [-Wunused-but-set-variable]
+  320 |         int flag_runA = 0; // 0 experimento A sin iniciar | habilitado para solicitar datos
+      |             ^~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:297:13: warning: variable 'indexDatos' set but not used [-Wunused-but-set-variable]
+  297 |         int indexDatos=0;// index para guardar los datos útiles
+      |             ^~~~~~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:279:9: warning: variable 'msg_id' set but not used [-Wunused-but-set-variable]
+  279 |     int msg_id; // mqtt
+      |         ^~~~~~
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c: At top level:
+/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/main/app_main.c:91:21: warning: 's_task_handle' defined but not used [-Wunused-variable]
+   91 | static TaskHandle_t s_task_handle;
+      |                     ^~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable mqtt_tcp.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/mqtt_tcp.bin
+[7/8] cd /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/esp-idf/esptool_py && /home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/rome/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/partition_table/partition-table.bin /home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build/mqtt_tcp.bin
+mqtt_tcp.bin binary size 0xe5130 bytes. Smallest app partition is 0x100000 bytes. 0x1aed0 bytes (11%) free.
+[7/8] cd /home/rome/esp/esp-idf/components/esptool_py && /home/rome/.espressif/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/home/rome/esp/esp-idf -D "SERIAL_TOOL=/home/rome/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/rome/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/rome/esp/esp_workspace/esp_workspace/tcp_uart/build -P /home/rome/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c3 -p /dev/ttyUSB1 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 mqtt_tcp.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev1
+Serial port /dev/ttyUSB1
+Connecting....
+Chip is ESP32-C3 (QFN32) (revision v0.3)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 58:cf:79:07:53:84
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f5fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20528 bytes to 12602...
+Writing at 0x00000000... (100 %)
+Wrote 20528 bytes (12602 compressed) at 0x00000000 in 0.8 seconds (effective 216.5 kbit/s)...
+Hash of data verified.
+Compressed 938288 bytes to 538831...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c748... (6 %)
+Writing at 0x00023a0b... (9 %)
+Writing at 0x00029529... (12 %)
+Writing at 0x00034f24... (15 %)
+Writing at 0x0003cd84... (18 %)
+Writing at 0x000430d2... (21 %)
+Writing at 0x0004a4d0... (24 %)
+Writing at 0x00052437... (27 %)
+Writing at 0x0005944c... (30 %)
+Writing at 0x0006086d... (33 %)
+Writing at 0x00066e8c... (36 %)
+Writing at 0x0006d3b2... (39 %)
+Writing at 0x00073fe0... (42 %)
+Writing at 0x0007a384... (45 %)
+Writing at 0x000809fc... (48 %)
+Writing at 0x000869f5... (51 %)
+Writing at 0x0008cbd2... (54 %)
+Writing at 0x00092a65... (57 %)
+Writing at 0x00098e64... (60 %)
+Writing at 0x0009f3f0... (63 %)
+Writing at 0x000a5324... (66 %)
+Writing at 0x000ac098... (69 %)
+Writing at 0x000b2e3f... (72 %)
+Writing at 0x000b9dfd... (75 %)
+Writing at 0x000c0f8e... (78 %)
+Writing at 0x000c7680... (81 %)
+Writing at 0x000cd507... (84 %)
+Writing at 0x000d3be2... (87 %)
+Writing at 0x000d9b9b... (90 %)
+Writing at 0x000e09ae... (93 %)
+Writing at 0x000e82c7... (96 %)
+Writing at 0x000ef226... (100 %)
+Wrote 938288 bytes (538831 compressed) at 0x00010000 in 15.6 seconds (effective 479.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 272.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

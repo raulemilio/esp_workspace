@@ -1,0 +1,154 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x4038b1ba: systimer_ll_is_counter_value_valid at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/systimer_ll.h:65 (discriminator 1)
+ (inlined by) systimer_hal_get_counter_value at /home/rome/esp/esp-idf/components/hal/systimer_hal.c:56 (discriminator 1)
+[0m
+[0;33m0x40381dee: esp_timer_impl_get_time at /home/rome/esp/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:79
+[0m
+[0;33m0x40386796: systimer_ticks_to_us at /home/rome/esp/esp-idf/components/esp_hw_support/port/esp32c3/systimer.c:16
+[0m
+[0;33m0x40000000: _start in ROM
+[0m
+[0;33m0x42006e60: usb_serial_jtag_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_usb_serial_jtag.c:126
+[0m
+[0;33m0x42007256: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42007256: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42007256: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x40387aa2: xQueueTakeMutexRecursive at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:765
+[0m
+[0;33m0x403816e8: lock_acquire_generic at /home/rome/esp/esp-idf/components/newlib/locks.c:144
+[0m
+[0;33m0x42007260: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42007258: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42007266: uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42007258: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42007256: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b952: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x40389596: vPortClearInterruptMask at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:385
+[0m
+[0;33m0x40388e10: xTaskGetSchedulerState at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5066
+[0m
+[0;33m0x42007256: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x40000000: _start in ROM
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b952: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x42007260: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42007256: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b952: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x42007254: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42007254: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x42007260: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b952: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+[0;33m0x42007256: uart_ll_get_txfifo_len at /home/rome/esp/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:341 (discriminator 1)
+ (inlined by) uart_tx_char at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:164 (discriminator 1)
+[0m
+[0;33m0x420082e0: uart_write at /home/rome/esp/esp-idf/components/vfs/vfs_uart.c:209 (discriminator 2)
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4038b952: multi_heap_malloc_impl at /home/rome/esp/esp-idf/components/heap/multi_heap.c:218
+[0m
+Exception in thread Thread-2 (_run_outer):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 100, in run
+    self.close_serial()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 105, in close_serial
+    self.set_closing_wait(delay_sec=1)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 128, in set_closing_wait
+    fcntl.ioctl(self.serial.fd, termios.TIOCSSERIAL, buf)
+PermissionError: [Errno 1] Operation not permitted
+[0m

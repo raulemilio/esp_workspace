@@ -1,0 +1,124 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x4200a224: mqtt_message_receive at /home/rome/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1214 (discriminator 15)
+[0m
+[0;33m0x4200a216: mqtt_message_receive at /home/rome/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1208
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x403879a0: xQueueSemaphoreTake at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1721
+[0m
+[0;33m0x40389596: vPortClearInterruptMask at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:385
+[0m
+[0;33m0x403895c0: vPortExitCritical at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:339
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40000000: _start in ROM
+[0m
+[0;33m0x4038785e: xQueueReceive at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1536
+[0m
+[0;33m0x420070a8: usb_serial_jtag_write at /home/rome/esp/esp-idf/components/vfs/vfs_usb_serial_jtag.c:141
+[0m
+[0;33m0x42006afa: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:78
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x420070a8: usb_serial_jtag_write at /home/rome/esp/esp-idf/components/vfs/vfs_usb_serial_jtag.c:141
+[0m
+[0;33m0x42006ab8: console_write at /home/rome/esp/esp-idf/components/vfs/vfs_console.c:71
+[0m
+[0;33m0x4200608e: esp_vfs_write at /home/rome/esp/esp-idf/components/vfs/vfs.c:445 (discriminator 4)
+[0m
+[0;33m0x4201d4d2: esp_transport_read at /home/rome/esp/esp-idf/components/tcp_transport/transport.c:139
+[0m
+[0;33m0x4200a1b4: mqtt_message_receive at /home/rome/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1182
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x403879a0: xQueueSemaphoreTake at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1721
+[0m
+[0;33m0x4200cecc: mqtt_get_total_length at /home/rome/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c:165
+[0m
+[0;33m0x4200a140: mqtt_message_receive at /home/rome/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1218
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40389596: vPortClearInterruptMask at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:385
+[0m
+[0;33m0x403895c0: vPortExitCritical at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:339
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40387358: xQueueGenericSend at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:999
+[0m
+[0;33m0x40389596: vPortClearInterruptMask at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:385
+[0m
+[0;33m0x40388e10: xTaskGetSchedulerState at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5066
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x403877b4: xQueueReceive at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1484
+[0m
+[0;33m0x40389596: vPortClearInterruptMask at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:385
+[0m
+[0;33m0x403895c0: vPortExitCritical at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:339
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x4038356e: mutex_unlock_wrapper at /home/rome/esp/esp-idf/components/esp_wifi/esp32c3/esp_adapter.c:197
+[0m
+[0;33m0x4038b90a: multi_heap_internal_unlock at /home/rome/esp/esp-idf/components/heap/multi_heap.c:168 (discriminator 1)
+[0m
+[0;33m0x4200590c: esp_vfs_safe_fd_isset at /home/rome/esp/esp-idf/components/vfs/vfs.c:838 (discriminator 3)
+[0m
+[0;33m0x420065ec: esp_vfs_select at /home/rome/esp/esp-idf/components/vfs/vfs.c:929
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x40389596: vPortClearInterruptMask at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:385
+[0m
+[0;33m0x40388e10: xTaskGetSchedulerState at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5066
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x403877b4: xQueueReceive at /home/rome/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1484
+[0m
+[0;33m0x4201dfec: recv at /home/rome/esp/esp-idf/components/lwip/include/lwip/sockets.h:38
+ (inlined by) tcp_read at /home/rome/esp/esp-idf/components/tcp_transport/transport_ssl.c:290
+[0m
+[0;33m0x4201dfcc: tcp_read at /home/rome/esp/esp-idf/components/tcp_transport/transport_ssl.c:282
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x400587d8: memcpy in ROM
+[0m
+[0;33m0x40040c18: esf_buf_alloc_dynamic in ROM
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x4206e66c: tcp_input_delayed_close at /home/rome/esp/esp-idf/components/lwip/lwip/src/core/tcp_in.c:631
+[0m
+[0;33m0x42070c5c: tcp_input at /home/rome/esp/esp-idf/components/lwip/lwip/src/core/tcp_in.c:486
+[0m
+[0;33m0x4005890e: memset in ROM
+[0m
+[0;33m0x42070c5c: tcp_input at /home/rome/esp/esp-idf/components/lwip/lwip/src/core/tcp_in.c:486
+[0m
+Exception in thread Thread-2 (_run_outer):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 100, in run
+    self.close_serial()
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 105, in close_serial
+    self.set_closing_wait(delay_sec=1)
+  File "/home/rome/.espressif/python_env/idf5.1_py3.10_env/lib/python3.10/site-packages/esp_idf_monitor/base/serial_reader.py", line 128, in set_closing_wait
+    fcntl.ioctl(self.serial.fd, termios.TIOCSSERIAL, buf)
+PermissionError: [Errno 1] Operation not permitted
+[0m

@@ -1,0 +1,318 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xe (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f68
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Feb  7 2024 09:33:49[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (33) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (90) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09678h ( 38520) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=000196a0 vaddr=3fc8b800 size=01148h (  4424) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001a7f0 vaddr=40380000 size=05828h ( 22568) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1aea8h (110248) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=0003aed0 vaddr=40385828 size=05eb0h ( 24240) load[0m
+[0;32mI (150) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (150) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Unicore app[0m
+[0;32mI (162) cpu_start: Pro cpu up.[0m
+[0;32mI (170) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) cpu_start: Application information:[0m
+[0;32mI (174) cpu_start: Project name:     uart_async_rxtxtasks[0m
+[0;32mI (180) cpu_start: App version:      d2fb13c-dirty[0m
+[0;32mI (185) cpu_start: Compile time:     Feb  7 2024 09:33:38[0m
+[0;32mI (191) cpu_start: ELF file SHA256:  beb88f1e7f17e829...[0m
+[0;32mI (197) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (202) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (207) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (212) cpu_start: Chip rev:         v0.3[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC8D7A0 len 0004EF70 (315 KiB): DRAM[0m
+[0;32mI (230) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (236) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (244) spi_flash: detected chip: generic[0m
+[0;32mI (247) spi_flash: flash io: dio[0m
+[0;33mW (251) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (265) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (271) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (278) app_start: Starting scheduler on CPU0[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (283) main_task: Calling app_main()[0m
+[0;32mI (283) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (293) main_task: Returned from app_main()[0m
+[0;32mI (2293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (4293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (6293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (8293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (10293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (12293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (14293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (16293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (18293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (20293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (20573) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (20573) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (21573) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (21573) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (22293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (22573) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (22573) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (23583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (23583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (24293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (24583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (24583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (25583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (25583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (26293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (26583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (26583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (27583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (27583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (28293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (28583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (28583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (29583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (29583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (30293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (30583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (30583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (31583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (31583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (32293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (32583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (32583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (33583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (33583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (34293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (34583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (34583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (35583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (35583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (36293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (36583) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (36583) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (37593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (37593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (38293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (38593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (38593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (39593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (39593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (40293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (40593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (40593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (41593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (41593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (42293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (42593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (42593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (43593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (43593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (44293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (44593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (44593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (45593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (45593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (46293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (46593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (46593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (47593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (47593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (48293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (48593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (48593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (49593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (49593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (50293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (50593) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (50593) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (51603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (51603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (52293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (52603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (52603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (53603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (53603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (54293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (54603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (54603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (55603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (55603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (56293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (56603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (56603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (57603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (57603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (58293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (58603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (58603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (59603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (59603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (60293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (60603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (60603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (61603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (61603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (62293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (62603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (62603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (63603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (63603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (64293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (64603) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (64603) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (65613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (65613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (66293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (66613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (66613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (67613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (67613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (68293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (68613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (68613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (69613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (69613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (70293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (70613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (70613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (71613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (71613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (72293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (72613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (72613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (73613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (73613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (74293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (74613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (74613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (75613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (75613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (76293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (76613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (76613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (77613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (77613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (78293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (78613) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (78613) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (79623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (79623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (80293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (80623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (80623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (81623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (81623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (82293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (82623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (82623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (83623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (83623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (84293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (84623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (84623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (85623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (85623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (86293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (86623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (86623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (87623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (87623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (88293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (88623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (88623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (89623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (89623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (90293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (90623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (90623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (91623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (91623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (92293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (92623) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (92623) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (93633) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (93633) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (94293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (94633) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (94633) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (95633) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (95633) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (96293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (96633) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (96633) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (97633) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (97633) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (98293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (98633) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (98633) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (100293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (101693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (101693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (102293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (102693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (102693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (103693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (103693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (104293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (104693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (104693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (105693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (105693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (106293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (106693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (106693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (107693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (107693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (108293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (108693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (108693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (109693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (109693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (110293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (110693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (110693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (111693) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (111693) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (112293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (114293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (115383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (115383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (116293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (116383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (116383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (117383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (117383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (118293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (118383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (118383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (119383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (119383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (120293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (120383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (120383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (121383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (121383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (122293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (122383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (122383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (123383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (123383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
+[0;32mI (124293) TX_TASK: Wrote 26 bytes[0m
+[0;32mI (124383) RX_TASK: Read 4 bytes: 'dato'[0m
+[0;32mI (124383) RX_TASK: 0x3fc92654   64 61 74 6f                                       |dato|[0m
