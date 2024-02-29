@@ -1,0 +1,32 @@
+prueba: 02/05/22
+
+experimento B:
+
+-->inicializar: P,A,0,0,0,$
+----< respuesta: P,A,0,0,$
+-->empezar: P,R,1,0,0,$ (solo cambia el tercer campo para determinar si es experimento A o B)
+----< respuesta: P,D,0,1,$
+--> pedido de proximo dato: P,O,0,0,0,$
+----< respuesta: P,D,1,6,$ 
+--> pedido de proximo dato: P,O,0,0,0,$
+----< respuesta: P,D,2,6,$ (el tercer campo es la cantidad de mediciones realizadas, en este caso lo hice solo 3 veces)
+...
+--> pedido de proximo dato y llega al fin de la carrera: P,O,0,0,0,$
+----< respuesta: P,S,3,9,$
+
+
+
+experimento A:
+
+-->inicializar: P,A,1,0,0,$
+----< respuesta: P,A,0,0,$
+-->empezar: P,R,0,0,0,$ (solo cambia el tercer campo para determinar si es experimento A o B)
+----< respuesta: P,D,0,1,$
+--> pedido de proximo dato: P,O,0,0,0,$
+----< respuesta: P,D,1,6,$
+--> pedido de proximo dato: P,O,0,0,0,$
+----< respuesta: P,D,2,6,$
+...
+--> pedido de proximo dato y llega al fin de la carrera: P,O,0,0,0,$
+----< respuesta: P,S,3,9,$ (el tercer campo es la cantidad de mediciones realizadas, en este caso lo hice solo 3 veces)
+
